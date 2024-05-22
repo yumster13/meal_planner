@@ -1,0 +1,37 @@
+{% extends "base.html"%}
+
+{% block content %}
+
+<table class="table mt-3">
+    <thead>
+      <tr>
+        <th scope="col"><div class="card-title bg-success bg-opacity-25 p-2 border border-success rounded"><span class="me-2">Ingrédient</span></div></th>
+        <th scope="col"><div class="card-title bg-success bg-opacity-25 p-2 border border-success rounded"><span class="me-2">Catégorie</span></div></th>
+        <th scope="col"><div class="card-title bg-success bg-opacity-25 p-2 border border-success rounded"><span class="me-2">Unité</span></div></th>
+        <th scope="col"><div class="card-title bg-success bg-opacity-25 p-2 border border-success rounded"><span class="me-2">Prix moyen</span></div></th>
+        <th scope="col"><div class="card-title bg-success bg-opacity-25 p-2 border border-success rounded"><span class="me-2">Saisons</span></div></th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for key,engredient in engredients.items %}
+      <tr>
+        <th scope="row">{{ key }}</th>
+        <td>{% for cat in engredient.cats %}
+          <div class="card-title bg-warning bg-opacity-25 p-2 border border-warning rounded-pill d-inline-block me-2">
+            <span>{{ cat.name }}</span>
+        </div>
+        {% endfor %}</td>
+        <td>{{ engredient.unit }}</td>
+        <td>{{ engredient.avg_price }}</td>
+        <td>
+          {% for season in engredient.seasons %}
+          <div class="card-title bg-warning bg-opacity-25 p-2 border border-warning rounded-pill d-inline-block me-2">
+              <span>{{ season.name }}</span>
+          </div>
+          {% endfor %}
+      </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

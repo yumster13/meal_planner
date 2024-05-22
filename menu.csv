@@ -1,0 +1,96 @@
+Anglais,TRUE,Chaud
+Baguette savoyarde (végé),TRUE,Chaud
+Barbecue,TRUE,Chaud
+Burger,TRUE,Chaud
+Burger (végé),TRUE,Chaud
+Chili con carne,TRUE,Chaud
+Chili sin carne (végé),TRUE,Chaud
+Couscous,TRUE,Chaud
+Couscous (végé),TRUE,Chaud
+Croque fromage (végé),TRUE,Chaud
+Croque monsieur,TRUE,Chaud
+Curry de légumes (végé),TRUE,Chaud
+Fish-stick épinard purée,TRUE,Chaud
+Hachis parmentier,FALSE,Chaud
+Hachis parmentier (végé),FALSE,Chaud
+Lasagne,FALSE,Chaud
+Lasagne (végé),FALSE,Chaud
+Lentilles compote purée (végé),TRUE,Chaud
+Omelette,TRUE,Chaud
+Omelette (végé),TRUE,Chaud
+Pain saucisse,TRUE,Chaud
+Pâtes courgette (végé),TRUE,Chaud
+Pâtes courgette lardons,TRUE,Chaud
+Pâtes fromage (végé),TRUE,Chaud
+Pâtes jambon fromage,TRUE,Chaud
+Pâtes tomate mozza pesto (végé),TRUE,Chaud
+Pitta,TRUE,Chaud
+Pitta (végé),TRUE,Chaud
+Pizza,TRUE,Chaud
+Pizza (végé),TRUE,Chaud
+Poulet curry,TRUE,Chaud
+Ratatouille,TRUE,Chaud
+Ratatouille (végé),TRUE,Chaud
+Riz cantonais,TRUE,Chaud
+Riz cantonais (végé),TRUE,Chaud
+Saucisse compote purée,TRUE,Chaud
+Saucisse patate camembert,TRUE,Chaud
+Soupe carottes + Tartines jambon/fromage,TRUE,Chaud
+Soupe courgettes + Tartines jambon/fromage,TRUE,Chaud
+Soupe tomates + Tartines jambon/fromage,TRUE,Chaud
+Spaghetti bolognaise,TRUE,Chaud
+Spaghetti bolognaise (végé),TRUE,Chaud
+Vol-au-vent,TRUE,Chaud
+Vol-au-vent (végé),TRUE,Chaud
+Wraps légumes (végé),TRUE,Chaud
+Wraps poulet,TRUE,Chaud
+Céréales chocolat,TRUE,Déjeuner
+Céréales chocolat + Jus,TRUE,Déjeuner
+Céréales nature,TRUE,Déjeuner
+Céréales nature + Jus,TRUE,Déjeuner
+Couques,TRUE,Déjeuner
+Couques + Chocolat chaud,TRUE,Déjeuner
+Couques + Jus,TRUE,Déjeuner
+Craquelin/Cramique,TRUE,Déjeuner
+Craquelin/Cramique + Chocolat chaud,TRUE,Déjeuner
+Craquelin/Cramique + Jus,TRUE,Déjeuner
+Crèpes,TRUE,Déjeuner
+Muesli,TRUE,Déjeuner
+Muesli + Jus,TRUE,Déjeuner
+Pain choco,TRUE,Déjeuner
+Pain choco + Chocolat chaud,TRUE,Déjeuner
+Pain choco + Jus,TRUE,Déjeuner
+Pain choco/confiture,TRUE,Déjeuner
+Pain choco/confiture + Chocolat chaud,TRUE,Déjeuner
+Pain choco/confiture + Jus,TRUE,Déjeuner
+Pain confiture,TRUE,Déjeuner
+Pain confiture + Chocolat chaud,TRUE,Déjeuner
+Pain confiture + Jus,TRUE,Déjeuner
+Pain perdu,TRUE,Déjeuner
+Porridge chocolat-banane,TRUE,Déjeuner
+Porridge nature,TRUE,Déjeuner
+Yaourt garni,TRUE,Déjeuner
+Baguette (salade de viande/poulet curry/américain),TRUE,Froid
+Baguette américain,TRUE,Froid
+Baguette jambon/fromage,TRUE,Froid
+Baguette légumes grillés (végé),TRUE,Froid
+Baguette tomate mozza (végé),TRUE,Froid
+Salade de lentilles,TRUE,Froid
+Salade de lentilles (végé),TRUE,Froid
+Salade de pâtes,TRUE,Froid
+Salade de pâtes (végé),TRUE,Froid
+Salade de pâtes grec,TRUE,Froid
+Salade de pâtes légumes grilés (végé),TRUE,Froid
+Salade de quinoa (végé),TRUE,Froid
+Salade de riz (végé),TRUE,Froid
+Salade liégeoise,TRUE,Froid
+Salade liégeoise (végé),TRUE,Froid
+Taboulé,TRUE,Froid
+Taboulé (végé),TRUE,Froid
+Tartines fromage (végé),TRUE,Froid
+Tartines jambon/fromage,TRUE,Froid
+Cake chocolat,FALSE,Gouter
+Cake nature,FALSE,Gouter
+Crumble pomme,FALSE,Gouter
+Glaces,TRUE,Gouter
+Tiramisu,FALSE,Gouter
