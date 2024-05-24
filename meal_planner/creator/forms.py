@@ -37,10 +37,12 @@ class CreateUser(forms.Form):
 class MenuForm(forms.ModelForm):
     class Meta:
         model = Menu
-        fields = ['nbr_anim','nbr_leaders','nbr_vege','date','moment','recipe']
-        widgets = {
-            'date': DateInput(),
-        }
+        fields = ['date', 'moment', 'recipe', 'nbr_anim', 'nbr_vege', 'nbr_leaders']
+    
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['nbr_anim'].widget.attrs.update({'min': '0'})
+
 
 class MenuFormNoDate(forms.ModelForm):
     class Meta:

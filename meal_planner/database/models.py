@@ -1,5 +1,7 @@
 from django.db import models
 
+from django.core.validators import MaxValueValidator, MinValueValidator 
+
 class Ages(models.TextChoices):
     DEFAULT = '18+',
     PF = 'Petit F', 
@@ -117,9 +119,9 @@ class Recipe(models.Model):
 
 class Menu(models.Model):
     camp = models.ForeignKey(Camp,on_delete=models.RESTRICT, null=False)
-    nbr_anim = models.IntegerField("nombre d'animés", null=False,blank=False)
-    nbr_leaders = models.IntegerField("nombre d'animateurs", null=False,blank=False)
-    nbr_vege = models.IntegerField("nombre de vege", null=False,blank=False)
+    nbr_anim = models.IntegerField("nombre d'animés", null=False,blank=False,validators=[MinValueValidator(0), MaxValueValidator(100)])
+    nbr_leaders = models.IntegerField("nombre d'animateurs", null=False,blank=False, validators=[MinValueValidator(0), MaxValueValidator(100)])
+    nbr_vege = models.IntegerField("nombre de vege", null=False,blank=False, validators=[MinValueValidator(0), MaxValueValidator(100)])
     date = models.DateField("Jour",null=False, blank=False)
     moment= models.CharField("Moment", choices=Moment.choices, default=Moment.MATIN,max_length=10)
     recipe = models.ForeignKey(Recipe,on_delete=models.RESTRICT, null=False)

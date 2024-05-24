@@ -56,9 +56,9 @@ def Recipes(request):
     recipes = databse_access.getRecipes()
     recipe_dict = {}
     for recipe in recipes:
-        print(recipe.tags)
+        #print(recipe.tags)
         recipe_dict[recipe.name] = {'prairie':recipe.prairie,'tags': recipe.tags.name if recipe.tags else '','avg_price':recipe.calculate_total_price(Ages.PG)}
-    print(recipe_dict)
+   # print(recipe_dict)
     context = {'recipes':recipe_dict,'recipe':True}
     return render(request,'recipes.html',context)
 
@@ -67,7 +67,7 @@ def Engredients(request):
     engredients_dict = {}
     for ingredient in ingredients:
         engredients_dict[ingredient.name] = {'unit':ingredient.mesurement,'cats': ingredient.category.all(),'avg_price':ingredient.avg_price,'seasons':ingredient.season.all()}
-    print(engredients_dict)
+   # print(engredients_dict)
     context = {'engredients':engredients_dict,'engredient':True}
     return render(request,'engredients.html',context)
 
@@ -86,7 +86,7 @@ def CreateUserView(request):
             user = email[:email.rfind("@")]
             password = generate_password(15)
             user = User.objects.create_user(user,email,password)
-            message = f'Bonjour, voici votre utilisateur et votre mot de passe utilisateur = {user}, mot de passe = {password}'
+            message = f'Bonjour, voici votre utilisateur et votre mot de passe utilisateur = {user}, mot de passe = {password} \nVoici le site internet pour vous connecter et modifier votre menu:https://mealplanner773.pythonanywhere.com/ '
             email_from = settings.EMAIL_HOST_USER
             recipient_list = [email, ]
             user.save()
@@ -137,7 +137,7 @@ def DisplayMenuCamp(request, camp):
         gouter_menu = databse_access.getMenu(date, Moment.GOUTER, camp_objects)
         souper_menu = databse_access.getMenu(date, Moment.SOUPER, camp_objects)
         cinquieme_menu = databse_access.getMenu(date, Moment.CINQIEME, camp_objects)
-        print(matin_menu if matin_menu else None)
+        #print(matin_menu if matin_menu else None)
         menu_dict[date.day] = [
             MenuForm(initial=matin_menu if matin_menu else {'moment': Moment.MATIN, 'date': date}),
             MenuForm(initial=midi_menu if midi_menu else {'moment': Moment.MIDI, 'date': date}),
@@ -167,7 +167,7 @@ def addMenuToCamp(request, camp):
             if databse_access.getMenuId(camp=camp,date=menu_form.cleaned_data['date'],moment=menu_form.cleaned_data['moment']) != None:
                 Menu.objects.filter(camp=camp,date=menu_form.cleaned_data['date'],moment=menu_form.cleaned_data['moment']).delete()
             
-            print(menu_form.cleaned_data['date'])
+            #print(menu_form.cleaned_data['date'])
             if menu_form.cleaned_data['date'] >= camp_instance.from_date and menu_form.cleaned_data['date'] <= camp_instance.to_date:
                 menu_instance = menu_form.save(commit=False)
                 menu_instance.camp = camp_instance
