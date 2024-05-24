@@ -14,6 +14,7 @@
                 <th scope="col"><div class="card-title bg-success bg-opacity-25 p-2 border border-success rounded"><span class="me-2">Recette</span></div></th>
                 <th scope="col"><div class="card-title bg-success bg-opacity-25 p-2 border border-success rounded"><span class="me-2">Prix moyen</span></div></th>
                 <th scope="col"><div class="card-title bg-success bg-opacity-25 p-2 border border-success rounded"><span class="me-2">Prairie ?</span></div></th>
+                <th scope="col"><div class="card-title bg-success bg-opacity-25 p-2 border border-success rounded"><span class="me-2">Catégorie</span></div></th>
                 <th scope="col"><div class="card-title bg-success bg-opacity-25 p-2 border border-success rounded"><span class="me-2">Actions</span></div></th>
             </tr>
         </thead>
@@ -22,7 +23,13 @@
             <tr>
                 <th scope="row">{{ key }}</th>
                 <td>{{ recipe.avg_price }}</td>
+                <td>{{ recipe.avg_price }}</td>
                 <td>{% if recipe.prairie == True %}OUI{% else %}NON{% endif %}</td>
+                <td>
+                <div class="card-title bg-warning bg-opacity-25 p-2 border border-warning rounded-pill d-inline-block me-2">
+                  <span>{{ recipe.tags }}</span>
+                </div>
+                </td>
                 <td></td>
             </tr>
         {% endfor %}
