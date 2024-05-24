@@ -8,7 +8,7 @@ def getCampsSection(section_name):
     return Camp.objects.filter(section__name = section_name)
 
 def getRecipes():
-    return Recipe.objects.prefetch_related('tags').all()
+    return Recipe.objects.select_related('tags').all()
 
 def getIngredients():
     return Ingredient.objects.all()

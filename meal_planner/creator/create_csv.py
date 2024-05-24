@@ -72,3 +72,95 @@ def calculate_quantities(request):
     os.rmdir(temp_dir)
 
     return response
+
+
+import os
+import pandas as pd
+import zipfile
+from io import BytesIO
+from django.http import HttpResponse
+from collections import defaultdict
+
+def generate_ingredient_list(request):
+    camps = databse_access.getCamps()
+    temp_dir = 'temp_files'
+
+    if not os.path.exists(temp_dir):
+        os.makedirs(temp_dir)
+
+    # Global dictionary to track ingredient quantities across all camps
+    global_ingredient_dict = defaultdict(lambda: {'quantity': 0, 'measurement': '', 'categories': ''})
+
+    for camp in camps:
+        name = camp.section.name
+        age = camp.section.age
+        menus = databse_access.getMenuCamp(camp)
+        
+        for menu in menus:
+            recipe = databse_access.getEngredientsFromRecipe(menu.recipe.id)
+            
+            for recipexingredient in recipe:
+                for ingredient in recipexingredient.ingredients.all():
+                    ingredient_info = databse_access.getIngredient(ingredient.id)
+                    
+                    if ingredient_info.vege:
+                        if ingredient.age == 'GG':
+                            quantity_vege = ingredient.quantity * menu.nbr_vege 
+                        else:
+                            quantity_vege = 0
+                    else:
+                        quantity_vege = 0
+
+                    if ingredient.age == age:
+                        quantity_anim = ingredient.quantity * menu.nbr_anim
+                    else:
+                        quantity_anim = 0
+
+                    if ingredient.age == 'GG':
+                        quantity_lead = ingredient.quantity * menu.nbr_leaders
+                    else:
+                        quantity_lead = 0
+
+                    total_quantity = quantity_lead + quantity_anim + quantity_vege
+                    categories = ", ".join([category.name for category in ingredient_info.category.all()])
+
+                    key = ingredient_info.name
+                    
+                    if key in global_ingredient_dict:
+                        global_ingredient_dict[key]['quantity'] += total_quantity
+                    else:
+                        global_ingredient_dict[key] = {
+                            'quantity': total_quantity,
+                            'measurement': ingredient_info.mesurement,
+                            'categories': categories,
+                        }
+
+    # Prepare the list for DataFrame
+    global_ingredient_list = [
+        [ingredient_name, info['quantity'], info['measurement'], info['categories']]
+        for ingredient_name, info in global_ingredient_dict.items()
+    ]
+
+    # Write to Excel file
+    df = pd.DataFrame(global_ingredient_list, columns=['Ingredient Name', 'Total Quantity', 'Measurement', 'Categories'])
+    excel_file_path = os.path.join(temp_dir, 'total_ingredients.xlsx')
+    df.to_excel(excel_file_path, index=False)
+
+    # Create a zip file containing the Excel file
+    zip_buffer = BytesIO()
+    with zipfile.ZipFile(zip_buffer, 'w') as zip_file:
+        zip_file.write(excel_file_path, os.path.basename(excel_file_path))
+
+    # Serve the zip file as a download
+    response = HttpResponse(zip_buffer.getvalue(), content_type='application/zip')
+    response['Content-Disposition'] = 'attachment; filename="ingredients.zip"'
+
+    # Clean up temporary files
+    os.remove(excel_file_path)
+    os.rmdir(temp_dir)
+
+    return response
+
+
+
+

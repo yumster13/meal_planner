@@ -56,7 +56,8 @@ def Recipes(request):
     recipes = databse_access.getRecipes()
     recipe_dict = {}
     for recipe in recipes:
-        recipe_dict[recipe.name] = {'prairie':recipe.prairie,'tags': recipe.tags.all(),'avg_price':recipe.calculate_total_price(Ages.PG)}
+        print(recipe.tags)
+        recipe_dict[recipe.name] = {'prairie':recipe.prairie,'tags': recipe.tags.name if recipe.tags else '','avg_price':recipe.calculate_total_price(Ages.PG)}
     print(recipe_dict)
     context = {'recipes':recipe_dict,'recipe':True}
     return render(request,'recipes.html',context)

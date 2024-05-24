@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path
 from .views import *
-from .create_csv import calculate_quantities
+from .create_csv import calculate_quantities,generate_ingredient_list
 urlpatterns = [
     path('admin/home',home,name="home"),
     path('camp/create',CreateCamp,name="createCamp"),
@@ -17,5 +17,6 @@ urlpatterns = [
     path('recipe/create',CreateRecipe,name="createRecipe"),
     path('user/create',CreateUserView,name="createUser"),
     path('camps/calculate_quantities',calculate_quantities,name="calculate_quantities"),
+    path('camps/generate_ingredient_list',generate_ingredient_list,name="generate_ingredient_list"),
 
 ]
