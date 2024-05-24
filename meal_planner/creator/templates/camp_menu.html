@@ -68,7 +68,7 @@
     </nav>
     <div class="tab-content" id="nav-tabContent">
       <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-        <div class="table-responsive" style="overflow-y: auto;">
+        <div class="table-container">
           <table class="table">
             <thead>
               <tr>
@@ -105,7 +105,7 @@
       </div>
       {% for key, values in menu_dict.items %}
         <div class="tab-pane fade" id="nav-{{ key }}" role="tabpanel" aria-labelledby="nav-{{ key }}-tab">
-          <div class="table-responsive" style="max-height: 400px; overflow-y: auto;">
+          <div class="table-container">
             <table class="table">
               <thead>
                 <tr>
