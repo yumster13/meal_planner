@@ -20,7 +20,7 @@ def getMenuId(date, moment, camp):
     return Menu.objects.filter(date=date, moment=moment, camp=camp).values('id').first()
 
 def getMenuCamp(camp):
-    return Menu.objects.all().filter(camp=camp).order_by('date')
+    return Menu.objects.filter(camp=camp).order_by('date')
 
 def getEngredientsFromRecipe(recipe):
     return Recipe.objects.prefetch_related('ingredients').all().filter(pk=recipe)

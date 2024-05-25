@@ -128,7 +128,7 @@ def get_date_range(start_date, end_date):
 
 def DisplayMenuCamp(request, camp):
     camp_objects = Camp.objects.get(id=camp)
-    menus = Menu.objects.filter(camp=camp_objects)
+    menus = Menu.objects.filter(camp=camp_objects).order_by('date')
     dates = get_date_range(camp_objects.from_date, camp_objects.to_date)
     menu_dict = {}
     date_dict = {}
