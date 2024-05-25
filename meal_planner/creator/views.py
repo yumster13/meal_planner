@@ -87,7 +87,7 @@ def CreateUserView(request):
             user = email[:email.rfind("@")]
             password = generate_password(15)
             user = User.objects.create_user(user,email,password)
-            message = f'Bonjour, voici votre utilisateur et votre mot de passe utilisateur = {user}, mot de passe = {password} \nVoici le site internet pour vous connecter et modifier votre menu:https://mealplanner773.pythonanywhere.com/ '
+            message = f'Bonjour, voici votre utilisateur et votre mot de passe utilisateur = {user}, mot de passe = {password} \nVoici le site internet pour vous connecter et modifier votre menu: https://menuplanner.pythonanywhere.com/ '
             email_from = settings.EMAIL_HOST_USER
             recipient_list = [email, ]
             user.save()
