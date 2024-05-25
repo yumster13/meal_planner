@@ -35,6 +35,7 @@ class CreateUser(forms.Form):
     section = forms.ModelChoiceField(queryset=Section.objects.all())
 
 class MenuForm(forms.ModelForm):
+    recipe = forms.ModelChoiceField(queryset=Recipe.objects.all().order_by('name'))
     class Meta:
         model = Menu
         fields = ['date', 'moment', 'recipe', 'nbr_anim', 'nbr_vege', 'nbr_leaders']
