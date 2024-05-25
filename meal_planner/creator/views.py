@@ -12,6 +12,7 @@ from django.shortcuts import get_object_or_404
 from django.utils.decorators import method_decorator
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.decorators import user_passes_test
+from django.http import JsonResponse
 
 def staff_member_required(view_func):
     decorated_view_func = user_passes_test(
@@ -165,21 +166,28 @@ def addMenuToCamp(request, camp):
     if request.method == 'POST':
         menu_form = MenuForm(request.POST)
         if menu_form.is_valid():
-            if databse_access.getMenuId(camp=camp,date=menu_form.cleaned_data['date'],moment=menu_form.cleaned_data['moment']) != None:
-                Menu.objects.filter(camp=camp,date=menu_form.cleaned_data['date'],moment=menu_form.cleaned_data['moment']).delete()
-            
-            #print(menu_form.cleaned_data['date'])
-            if menu_form.cleaned_data['date'] >= camp_instance.from_date and menu_form.cleaned_data['date'] <= camp_instance.to_date:
+            if databse_access.getMenuId(camp=camp, date=menu_form.cleaned_data['date'], moment=menu_form.cleaned_data['moment']) is not None:
+                Menu.objects.filter(camp=camp, date=menu_form.cleaned_data['date'], moment=menu_form.cleaned_data['moment']).delete()
+            if camp_instance.from_date <= menu_form.cleaned_data['date'] <= camp_instance.to_date:
                 menu_instance = menu_form.save(commit=False)
                 menu_instance.camp = camp_instance
                 menu_instance.save()
+                if request.headers.get('x-requested-with') == 'XMLHttpRequest':
+                    return JsonResponse({'success': True, 'message': "Ajout du menu"})
                 messages.success(request, "Ajout du menu")
                 return DisplayMenuCamp(request, camp)
-            messages.error(request, "Mauvaise date")
-            return DisplayMenuCamp(request, camp)   
+            else:
+                if request.headers.get('x-requested-with') == 'XMLHttpRequest':
+                    return JsonResponse({'success': False, 'message': "Mauvaise date"})
+                messages.error(request, "Mauvaise date")
+                return DisplayMenuCamp(request, camp)
         else:
+            if request.headers.get('x-requested-with') == 'XMLHttpRequest':
+                return JsonResponse({'success': False, 'errors': menu_form.errors})
             messages.error(request, menu_form.errors)
     else:
+        if request.headers.get('x-requested-with') == 'XMLHttpRequest':
+            return JsonResponse({'success': False, 'message': "Erreur durant l'exécution"})
         messages.error(request, "Erreur durant l'exécution")
     return DisplayMenuCamp(request, camp)
 
