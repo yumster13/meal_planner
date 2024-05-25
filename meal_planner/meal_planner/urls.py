@@ -25,5 +25,6 @@ urlpatterns = [
     path('<str:any_url>/',RedirectView ),
     path('',RedirectView ),
     path('account/logout',views.LogoutView.as_view(),name='logout' ),
+    path('session_security/', include('session_security.urls')),
     
 ]

@@ -10,7 +10,7 @@ from .generate_password import generate_password
 from django.contrib.auth.models import User,Group
 from django.shortcuts import get_object_or_404
 from django.utils.decorators import method_decorator
-
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.decorators import user_passes_test
 
 def staff_member_required(view_func):
@@ -42,7 +42,8 @@ def CreateCamp(request):
     else:
         camp_form = CampForm()
         return render(request, "camp.html", {'camp_form': camp_form, 'camp': True})
-
+    
+@login_required
 def Camps(request):
     if request.user.is_staff :
         camps = databse_access.getCamps()

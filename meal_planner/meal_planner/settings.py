@@ -40,10 +40,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'database',
     'creator',
-    'bootstrap5',
-    "crispy_forms",
-    "crispy_bootstrap5",
     'session_security',
+    'bootstrap5',
+    'crispy_forms',
+    'crispy_bootstrap5',
+    'axes',
 ]
 
 MIDDLEWARE = [
@@ -54,15 +55,27 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'meal_planner.lockdown.LoginRequiredMiddleware'
+    'meal_planner.lockdown.LoginRequiredMiddleware',
+    'session_security.middleware.SessionSecurityMiddleware',
+    'axes.middleware.AxesMiddleware',
 ]
 
 MIDDLEWARE_CLASSES = [
-    'session_security.middleware.SessionSecurityMiddleware',
+
 ]
+
 TEMPLATE_CONTEXT_PROCESSORS = [
     'django.core.context_processors.request',
 ]
+
+AUTHENTICATION_BACKENDS = [
+    # AxesStandaloneBackend should be the first backend in the AUTHENTICATION_BACKENDS list.
+    'axes.backends.AxesStandaloneBackend',
+
+    # Django ModelBackend is the default authentication backend.
+    'django.contrib.auth.backends.ModelBackend',
+]
+
 
 ROOT_URLCONF = 'meal_planner.urls'
 
@@ -170,4 +183,10 @@ AUTH_LOGOUT_ROUTE = ('logout')
 
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
+AXES_FAILURE_LIMIT = 5
+AXES_LOCK_OUT_AT_FAILURE = True
+AXES_RESET_ON_SUCCESS = True
+AXES_COOLOFF_TIME = 2
+
+SESSION_SECURITY_EXPIRE_AFTER  = 600
 
