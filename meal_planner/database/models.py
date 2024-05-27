@@ -100,7 +100,7 @@ class Tag(models.Model):
         return str(self.name)
 
 class Recipe(models.Model):
-    name = models.CharField("Nom", null=False,blank=False, max_length=100)
+    name = models.CharField("Nom", null=False,blank=False, max_length=300)
     prairie = models.BooleanField("En prairie ?", null=False,blank=False,default=False)
     tags = models.ForeignKey(Tag, on_delete=models.RESTRICT,null=True,blank=True)
     ingredients = models.ManyToManyField(RecipeXEngredient)
