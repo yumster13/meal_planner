@@ -100,7 +100,7 @@ class Tag(models.Model):
         return str(self.name)
 
 class Recipe(models.Model):
-    name = models.CharField("Nom", null=False,blank=False, max_length=30)
+    name = models.CharField("Nom", null=False,blank=False, max_length=100)
     prairie = models.BooleanField("En prairie ?", null=False,blank=False,default=False)
     tags = models.ForeignKey(Tag, on_delete=models.RESTRICT,null=True,blank=True)
     ingredients = models.ManyToManyField(RecipeXEngredient)
@@ -125,3 +125,11 @@ class Menu(models.Model):
     date = models.DateField("Jour",null=False, blank=False)
     moment= models.CharField("Moment", choices=Moment.choices, default=Moment.MATIN,max_length=10)
     recipe = models.ForeignKey(Recipe,on_delete=models.RESTRICT, null=False)
+
+
+
+class IngredientXSU(models.Model):
+    ingredient = models.ForeignKey(Ingredient,on_delete=models.RESTRICT)
+    quantity = models.DecimalField("Quantité",max_digits=20, decimal_places=5,default=0)
+    su = models.BooleanField("SU ?", null=False,blank=False,default=False)
+    category = models.ForeignKey(Category,on_delete=models.RESTRICT,null=True)
