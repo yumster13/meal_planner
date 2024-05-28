@@ -132,7 +132,8 @@ def get_date_range(start_date, end_date):
 #or camp_objects.section.name == request.user.groups.all()[0]
 def DisplayMenuCamp(request, camp):
     camp_objects = Camp.objects.get(id=camp)
-    if request.user.is_staff or  camp_objects.section.name == request.user.groups.all()[0]:
+    print(camp_objects.section.name,request.user.groups.all()[0] )
+    if request.user.is_staff or  str(camp_objects.section.name) == str(request.user.groups.all()[0]):
         menus = Menu.objects.filter(camp=camp_objects).order_by('date')
         dates = get_date_range(camp_objects.from_date, camp_objects.to_date)
         menu_dict = {}
