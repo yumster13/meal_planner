@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="responseMessage" class="alert mt-3" style="display:none;"></div>
+<div class="accordion" id="accordionExample">
+    {% for key, value in ingredients.items %}
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading{{ key }}">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ key }}" aria-expanded="false" aria-controls="collapse{{ key }}">
+          {{ key }}
+        </button>
+      </h2>
+      <div id="collapse{{ key }}" class="accordion-collapse collapse" aria-labelledby="heading{{ key }}" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <table class="table mt-3">
+                <thead>
+                  <tr>
+                    <th scope="col"><div class="card-title bg-success bg-opacity-25 p-2 border border-success rounded"><span class="me-2">Ingrédient</span></div></th>
+                    <th scope="col"><div class="card-title bg-success bg-opacity-25 p-2 border border-success rounded"><span class="me-2">Quantiés</span></div></th>
+                    <th scope="col"><div class="card-title bg-success bg-opacity-25 p-2 border border-success rounded"><span class="me-2">Unité</span></div></th>
+                    <th scope="col"><div class="card-title bg-success bg-opacity-25 p-2 border border-success rounded"><span class="me-2">Actions</span></div></th>
+                  </tr>
+                </thead>
+                <tbody>
+                {% for key,ingredient in ingredients.items %}
+                  <tr>
+                    <th scope="row">{{ ingredient.ingredient.name }}</th>
+                    <td>{{ ingredient.quantity }}</td>
+                    <td>{{ ingredient.ingredient.mesurement }}</td>
+                    <td><input class="form-check-input toggle-checkbox" type="checkbox" id="ingredient-{{ ingredient.id }}" data-ingredient-id="{{ ingredient.id }}" {% if ingredient.su %}checked{% endif %}></td>
+                  </tr>
+                {% endfor %}
+                </tbody>
+              </table>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.toggle-checkbox').change(function() {
+            var ingredientId = $(this).data('ingredient-id');
+            var isChecked = $(this).prop('checked');
+            $.ajax({
+                type: 'POST',
+                url: '/creator/ingredientList/toggleSu/' + ingredientId + '/',
+                data: {
+                    'csrfmiddlewaretoken': '{{ csrf_token }}'
+                },
+                success: function(response) {
+                    let alertBox = $('#responseMessage');
+                    if (response.success) {
+                        alertBox.removeClass('alert-danger').addClass('alert-success').text(response.message).show();
+                    } else {
+                        if (response.errors) {
+                            let errors = '';
+                            for (let field in response.errors) {
+                                errors += field + ': ' + response.errors[field].join(', ') + '<br>';
+                            }
+                            alertBox.removeClass('alert-success').addClass('alert-danger').html(errors).show();
+                        } else {
+                            alertBox.removeClass('alert-success').addClass('alert-danger').text(response.message).show();
+                        }
+                    }
+                    setTimeout(function() {
+                        alertBox.fadeOut('slow');
+                    }, 5000); // Hide after 5 seconds
+                }
+            });
+        });
+    });
+    </script>
+
+{% endblock %}

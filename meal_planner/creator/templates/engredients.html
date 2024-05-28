@@ -16,11 +16,7 @@
     {% for key,engredient in engredients.items %}
       <tr>
         <th scope="row">{{ key }}</th>
-        <td>{% for cat in engredient.cats %}
-          <div class="card-title bg-warning bg-opacity-25 p-2 border border-warning rounded-pill d-inline-block me-2">
-            <span>{{ cat.name }}</span>
-        </div>
-        {% endfor %}</td>
+        <td><div class="card-title bg-warning bg-opacity-25 p-2 border border-warning rounded-pill d-inline-block me-2">{{ engredient.cat }}</div></td>
         <td>{{ engredient.unit }}</td>
         <td>{{ engredient.avg_price }}</td>
         <td>

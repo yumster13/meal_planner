@@ -12,7 +12,7 @@ from django.shortcuts import get_object_or_404
 from django.utils.decorators import method_decorator
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.decorators import user_passes_test
-from django.http import JsonResponse
+from django.http import JsonResponse,HttpResponseForbidden
 
 def staff_member_required(view_func):
     decorated_view_func = user_passes_test(
@@ -68,8 +68,7 @@ def Engredients(request):
     ingredients = databse_access.getIngredients()
     engredients_dict = {}
     for ingredient in ingredients:
-        engredients_dict[ingredient.name] = {'unit':ingredient.mesurement,'cats': ingredient.category.all(),'avg_price':ingredient.avg_price,'seasons':ingredient.season.all()}
-   # print(engredients_dict)
+        engredients_dict[ingredient.name] = {'unit':ingredient.mesurement,'cat': ingredient.category.name,'avg_price':ingredient.avg_price,'seasons':ingredient.season.all()}
     context = {'engredients':engredients_dict,'engredient':True}
     return render(request,'engredients.html',context)
 
@@ -79,36 +78,40 @@ def CreateRecipe(request):
     return render(request,'recipe.html',context)
 
 def CreateUserView(request):
-    if request.method == 'POST':
-        user_form = CreateUser(request.POST)
-        if user_form.is_valid():
-            email = user_form.data['email']
-            section = user_form.data['section']
-            subject = 'Bievenue à mealplanner'
-            user = email[:email.rfind("@")]
-            password = generate_password(15)
-            user = User.objects.create_user(user,email,password)
-            message = f'Bonjour, voici votre utilisateur et votre mot de passe utilisateur = {user}, mot de passe = {password} \nVoici le site internet pour vous connecter et modifier votre menu: https://menuplanner.pythonanywhere.com/ '
-            email_from = settings.EMAIL_HOST_USER
-            recipient_list = [email, ]
-            user.save()
-            sectionobj = Section.objects.values('name').filter(id=section).first()
-            sectionName = sectionobj['name']
-            group = Group.objects.get_or_create(name=sectionName)
-            group_id = Group.objects.values('id').filter(name=sectionName).first()
-            user.groups.add(group_id['id'])
-            send_mail( subject, message, email_from, recipient_list )
-            messages.success(request, "L'utilisateur a été ajouté")
-            context = {'home':True, 'user_form':CreateUser}
-            return render(request,"home.html",context)
-        else:
-            messages.error(request, "Erreur en ajoutant l'utilisateur")
-            context = {'home':True, 'user_form':CreateUser}
-            return render(request,"home.html",context)
+    if request.user.is_staff:
+        if request.method == 'POST':
+            user_form = CreateUser(request.POST)
+            if user_form.is_valid():
+                email = user_form.data['email']
+                section = user_form.data['section']
+                subject = 'Bievenue à mealplanner'
+                user = email[:email.rfind("@")]
+                password = generate_password(15)
+                user = User.objects.create_user(user,email,password)
+                message = f'Bonjour, voici votre utilisateur et votre mot de passe utilisateur = {user}, mot de passe = {password} \nVoici le site internet pour vous connecter et modifier votre menu: https://menuplanner.pythonanywhere.com/ '
+                email_from = settings.EMAIL_HOST_USER
+                recipient_list = [email, ]
+                user.save()
+                sectionobj = Section.objects.values('name').filter(id=section).first()
+                sectionName = sectionobj['name']
+                group = Group.objects.get_or_create(name=sectionName)
+                group_id = Group.objects.values('id').filter(name=sectionName).first()
+                user.groups.add(group_id['id'])
+                send_mail( subject, message, email_from, recipient_list )
+                messages.success(request, "L'utilisateur a été ajouté")
+                context = {'home':True, 'user_form':CreateUser}
+                return render(request,"home.html",context)
+            else:
+                messages.error(request, "Erreur en ajoutant l'utilisateur")
+                context = {'home':True, 'user_form':CreateUser}
+                return render(request,"home.html",context)
+    else:
+        return render(request, '403.html', status=403)
         
 
 def displayRecipes(request):
     databse_access.getRecipes()
+
 from datetime import datetime,timedelta
 def get_date_range(start_date, end_date):
     # Convert the input strings to datetime objects if they are strings
@@ -126,39 +129,43 @@ def get_date_range(start_date, end_date):
 
     return date_list
 
+#or camp_objects.section.name == request.user.groups.all()[0]
 def DisplayMenuCamp(request, camp):
     camp_objects = Camp.objects.get(id=camp)
-    menus = Menu.objects.filter(camp=camp_objects).order_by('date')
-    dates = get_date_range(camp_objects.from_date, camp_objects.to_date)
-    menu_dict = {}
-    date_dict = {}
+    if request.user.is_staff or  camp_objects.section.name == request.user.groups.all()[0]:
+        menus = Menu.objects.filter(camp=camp_objects).order_by('date')
+        dates = get_date_range(camp_objects.from_date, camp_objects.to_date)
+        menu_dict = {}
+        date_dict = {}
 
-    for date in dates:
-        matin_menu = databse_access.getMenu(date, Moment.MATIN, camp_objects)
-        midi_menu = databse_access.getMenu(date, Moment.MIDI, camp_objects)
-        gouter_menu = databse_access.getMenu(date, Moment.GOUTER, camp_objects)
-        souper_menu = databse_access.getMenu(date, Moment.SOUPER, camp_objects)
-        cinquieme_menu = databse_access.getMenu(date, Moment.CINQIEME, camp_objects)
-        #print(matin_menu if matin_menu else None)
-        menu_dict[date.day] = [
-            MenuForm(initial=matin_menu if matin_menu else {'moment': Moment.MATIN, 'date': date}),
-            MenuForm(initial=midi_menu if midi_menu else {'moment': Moment.MIDI, 'date': date}),
-            MenuForm(initial=gouter_menu if gouter_menu else {'moment': Moment.GOUTER, 'date': date}),
-            MenuForm(initial=souper_menu if souper_menu else {'moment': Moment.SOUPER, 'date': date}),
-            MenuForm(initial=cinquieme_menu if cinquieme_menu else {'moment': Moment.CINQIEME, 'date': date}),
-        ]
-        date_dict[date.day] = date
+        for date in dates:
+            matin_menu = databse_access.getMenu(date, Moment.MATIN, camp_objects)
+            midi_menu = databse_access.getMenu(date, Moment.MIDI, camp_objects)
+            gouter_menu = databse_access.getMenu(date, Moment.GOUTER, camp_objects)
+            souper_menu = databse_access.getMenu(date, Moment.SOUPER, camp_objects)
+            cinquieme_menu = databse_access.getMenu(date, Moment.CINQIEME, camp_objects)
+            #print(matin_menu if matin_menu else None)
+            menu_dict[date.day] = [
+                MenuForm(initial=matin_menu if matin_menu else {'moment': Moment.MATIN, 'date': date}),
+                MenuForm(initial=midi_menu if midi_menu else {'moment': Moment.MIDI, 'date': date}),
+                MenuForm(initial=gouter_menu if gouter_menu else {'moment': Moment.GOUTER, 'date': date}),
+                MenuForm(initial=souper_menu if souper_menu else {'moment': Moment.SOUPER, 'date': date}),
+                MenuForm(initial=cinquieme_menu if cinquieme_menu else {'moment': Moment.CINQIEME, 'date': date}),
+            ]
+            date_dict[date.day] = date
 
-    section = camp_objects.section
-    context = {
-        'menus': menus,
-        'camp_objects': camp_objects,
-        'menu_form': MenuForm(initial={'moment': Moment.MATIN}),
-        'search': SearchDate,
-        'menu_dict': menu_dict,
-        'date_dict': date_dict
-    }
-    return render(request, "camp_menu.html", context)
+        section = camp_objects.section
+        context = {
+            'menus': menus,
+            'camp_objects': camp_objects,
+            'menu_form': MenuForm(initial={'moment': Moment.MATIN}),
+            'search': SearchDate,
+            'menu_dict': menu_dict,
+            'date_dict': date_dict
+        }
+        return render(request, "camp_menu.html", context)
+    else:
+        return render(request, '403.html', status=403)
 
 
 def addMenuToCamp(request, camp):
@@ -206,3 +213,23 @@ def ResetCampStatus(request,camp):
 
 def RedirectView(request):
     pass
+
+def getIngredientsSu(request):
+    categories = Category.objects.all()
+    categories_engredients = {}
+    for category in categories:
+        if category.name == 'produits laitiers':
+            categories_engredients['laitiers']  = IngredientXSU.objects.all().filter(category = category)
+        else:
+            categories_engredients[category.name]  = IngredientXSU.objects.all().filter(category = category)
+    ingredients = databse_access.getIngredientsSu()
+    context = {'engredientList':True,'ingredients':categories_engredients}
+    print(categories_engredients)
+    return render(request,'ingredients_su.html',context)
+
+def toggleSu(request,ingredient):
+    print("toggleSu", "ingredient",ingredient)
+    ingredient_xsu = get_object_or_404(IngredientXSU, pk=ingredient)
+    ingredient_xsu.su = not ingredient_xsu.su  # Toggle the boolean field
+    ingredient_xsu.save()
+    return JsonResponse({'success':True,'message':'value is updated '})

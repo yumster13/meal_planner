@@ -71,7 +71,7 @@ class Category(models.Model):
 
 class Ingredient(models.Model):
     name = models.CharField("Nom", null=False,blank=False, max_length=30)
-    category = models.ManyToManyField(Category)
+    category = models.ForeignKey(Category, on_delete=models.RESTRICT,null=True)
     season = models.ManyToManyField(Season)
     mesurement = models.CharField("Mesure", choices=Mesurements.choices, default=Mesurements.KG,max_length=10)
     avg_price = models.DecimalField("Prix moyen",max_digits=5, decimal_places=2,null=True)
@@ -82,7 +82,7 @@ class Ingredient(models.Model):
 
 class RecipeXEngredient(models.Model):
     ingredient = models.ForeignKey(Ingredient, on_delete=models.RESTRICT, null=False)
-    quantity = models.DecimalField("Quantité",max_digits=5, decimal_places=5)
+    quantity = models.DecimalField("Quantité",max_digits=15, decimal_places=5)
     age = models.CharField("Tranche d'âge", choices=Ages.choices, default=Ages.DEFAULT,max_length=10)
 
     def __str__(self):
@@ -90,7 +90,7 @@ class RecipeXEngredient(models.Model):
 
 class Stock(models.Model):
     ingredient = models.ForeignKey(Ingredient, on_delete=models.RESTRICT, null=False)
-    quantity = models.DecimalField("Quantité",max_digits=5, decimal_places=2)
+    quantity = models.DecimalField("Quantité",max_digits=10, decimal_places=2)
 
 class Tag(models.Model):
     name = models.CharField("Nom", null=False,blank=False, max_length=30)
