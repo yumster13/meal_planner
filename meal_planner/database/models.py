@@ -75,7 +75,6 @@ class Ingredient(models.Model):
     season = models.ManyToManyField(Season)
     mesurement = models.CharField("Mesure", choices=Mesurements.choices, default=Mesurements.KG,max_length=10)
     avg_price = models.DecimalField("Prix moyen",max_digits=5, decimal_places=2,null=True)
-    vege = models.BooleanField("Vege ?", null=False,blank=False,default=False)
 
     def __str__(self):
         return self.name
@@ -84,7 +83,7 @@ class RecipeXEngredient(models.Model):
     ingredient = models.ForeignKey(Ingredient, on_delete=models.RESTRICT, null=False)
     quantity = models.DecimalField("Quantité",max_digits=15, decimal_places=5)
     age = models.CharField("Tranche d'âge", choices=Ages.choices, default=Ages.DEFAULT,max_length=10)
-
+    vege = models.BooleanField("Vege ?", null=False,blank=False,default=False)
     def __str__(self):
         return str(self.ingredient)+' '+str(self.age)
 

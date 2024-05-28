@@ -109,38 +109,41 @@ def insert_into_mysql(conn, data):
                 engredient_id = cursor.fetchall()
                 value = remove_accents_and_uppercase(row[2])
                 print(value)
+                if row[3] == 'TRUE':
+                    row[3] = True
+                else: row[3] = False
                 if not engredient_id:
                     match value:
-                        case 'L':cursor.execute("INSERT into database_ingredient(name,mesurement,vege,avg_price) values (%s,%s,%s,%s)",(row[1],Mesurements.L,row[3],0))
-                        case 'KG':cursor.execute("INSERT into database_ingredient(name,mesurement,vege,avg_price) values (%s,%s,%s,%s)",(row[1],Mesurements.L,row[3],0))
-                        case 'PIECE':cursor.execute("INSERT into database_ingredient(name,mesurement,vege,avg_price) values (%s,%s,%s,%s)",(row[1],Mesurements.L,row[3],0))
-                        case 'TRANCHE':cursor.execute("INSERT into database_ingredient(name,mesurement,vege,avg_price) values (%s,%s,%s,%s)",(row[1],Mesurements.L,row[3],0))
-                        case 'CONDIMENT':cursor.execute("INSERT into database_ingredient(name,mesurement,vege,avg_price) values (%s,%s,%s,%s)",(row[1],Mesurements.L,row[3],0))
+                        case 'L':cursor.execute("INSERT into database_ingredient(name,mesurement,avg_price) values (%s,%s,%s)",(row[1],Mesurements.L,0))
+                        case 'KG':cursor.execute("INSERT into database_ingredient(name,mesurement,avg_price) values (%s,%s,%s)",(row[1],Mesurements.L,0))
+                        case 'PIECE':cursor.execute("INSERT into database_ingredient(name,mesurement,avg_price) values (%s,%s,%s)",(row[1],Mesurements.L,0))
+                        case 'TRANCHE':cursor.execute("INSERT into database_ingredient(name,mesurement,avg_price) values (%s,%s,%s)",(row[1],Mesurements.L,0))
+                        case 'CONDIMENT':cursor.execute("INSERT into database_ingredient(name,mesurement,avg_price) values (%s,%s,%s)",(row[1],Mesurements.L,0))
                     engredient_id = cursor.lastrowid
                     print(engredient_id)
-                    cursor.execute("INSERT into database_recipexengredient(quantity,age,ingredient_id) values (%s,%s,%s)",(convert_and_round(row[4]),Ages.PG,engredient_id))
+                    cursor.execute("INSERT into database_recipexengredient(quantity,age,ingredient_id,vege) values (%s,%s,%s,%s)",(convert_and_round(row[4]),Ages.PG,engredient_id,row[3]))
                     recipexengredient_id = cursor.lastrowid
                     cursor.execute("INSERT into database_recipe_ingredients(recipe_id,recipexengredient_id) values (%s,%s)",(recipe_id,recipexengredient_id))
-                    cursor.execute("INSERT into database_recipexengredient(quantity,age,ingredient_id) values (%s,%s,%s)",(convert_and_round(row[5]),Ages.PF,engredient_id))
+                    cursor.execute("INSERT into database_recipexengredient(quantity,age,ingredient_id,vege) values (%s,%s,%s,%s)",(convert_and_round(row[5]),Ages.PF,engredient_id,row[3]))
                     recipexengredient_id = cursor.lastrowid
                     cursor.execute("INSERT into database_recipe_ingredients(recipe_id,recipexengredient_id) values (%s,%s)",(recipe_id,recipexengredient_id))
-                    cursor.execute("INSERT into database_recipexengredient(quantity,age,ingredient_id) values (%s,%s,%s)",(convert_and_round(row[6]),Ages.GG,engredient_id))
+                    cursor.execute("INSERT into database_recipexengredient(quantity,age,ingredient_id,vege) values (%s,%s,%s,%s)",(convert_and_round(row[6]),Ages.GG,engredient_id,row[3]))
                     recipexengredient_id = cursor.lastrowid
                     cursor.execute("INSERT into database_recipe_ingredients(recipe_id,recipexengredient_id) values (%s,%s)",(recipe_id,recipexengredient_id))
-                    cursor.execute("INSERT into database_recipexengredient(quantity,age,ingredient_id) values (%s,%s,%s)",(convert_and_round(row[7]),Ages.GF,engredient_id))
+                    cursor.execute("INSERT into database_recipexengredient(quantity,age,ingredient_id,vege) values (%s,%s,%s,%s)",(convert_and_round(row[7]),Ages.GF,engredient_id,row[3]))
                     recipexengredient_id = cursor.lastrowid
                     cursor.execute("INSERT into database_recipe_ingredients(recipe_id,recipexengredient_id) values (%s,%s)",(recipe_id,recipexengredient_id))
                 else:
-                    cursor.execute("INSERT into database_recipexengredient(quantity,age,ingredient_id) values (%s,%s,%s)",(convert_and_round(row[4]),Ages.PG,engredient_id[0][0]))
+                    cursor.execute("INSERT into database_recipexengredient(quantity,age,ingredient_id,vege) values (%s,%s,%s,%s)",(convert_and_round(row[4]),Ages.PG,engredient_id[0][0],row[3]))
                     recipexengredient_id = cursor.lastrowid
                     cursor.execute("INSERT into database_recipe_ingredients(recipe_id,recipexengredient_id) values (%s,%s)",(recipe_id,recipexengredient_id))
-                    cursor.execute("INSERT into database_recipexengredient(quantity,age,ingredient_id) values (%s,%s,%s)",(convert_and_round(row[5]),Ages.PF,engredient_id[0][0]))
+                    cursor.execute("INSERT into database_recipexengredient(quantity,age,ingredient_id,vege) values (%s,%s,%s,%s)",(convert_and_round(row[5]),Ages.PF,engredient_id[0][0],row[3]))
                     recipexengredient_id = cursor.lastrowid
                     cursor.execute("INSERT into database_recipe_ingredients(recipe_id,recipexengredient_id) values (%s,%s)",(recipe_id,recipexengredient_id))
-                    cursor.execute("INSERT into database_recipexengredient(quantity,age,ingredient_id) values (%s,%s,%s)",(convert_and_round(row[6]),Ages.GG,engredient_id[0][0]))
+                    cursor.execute("INSERT into database_recipexengredient(quantity,age,ingredient_id,vege) values (%s,%s,%s,%s)",(convert_and_round(row[6]),Ages.GG,engredient_id[0][0],row[3]))
                     recipexengredient_id = cursor.lastrowid
                     cursor.execute("INSERT into database_recipe_ingredients(recipe_id,recipexengredient_id) values (%s,%s)",(recipe_id,recipexengredient_id))
-                    cursor.execute("INSERT into database_recipexengredient(quantity,age,ingredient_id) values (%s,%s,%s)",(convert_and_round(row[7]),Ages.GF,engredient_id[0][0]))
+                    cursor.execute("INSERT into database_recipexengredient(quantity,age,ingredient_id,vege) values (%s,%s,%s,%s)",(convert_and_round(row[7]),Ages.GF,engredient_id[0][0],row[3]))
                     recipexengredient_id = cursor.lastrowid
                     cursor.execute("INSERT into database_recipe_ingredients(recipe_id,recipexengredient_id) values (%s,%s)",(recipe_id,recipexengredient_id))            
         conn.commit()
@@ -154,13 +157,13 @@ def insert_into_mysql(conn, data):
 # Main function
 def main():
     # MySQL connection details
-    host = 'localhost'
-    user = 'user'
-    password = 'user_local'
-    database = 'meal_planner'
+    host = 'MenuPlanner.mysql.pythonanywhere-services.com'
+    user = 'MenuPlanner'
+    password = 'sE@Z_PYC3gNL.$x'
+    database = 'MenuPlanner$MEALPLANNER'
 
     # CSV file path
-    csv_file = 'quantites.csv'
+    csv_file = 'quantites_vrac_finales.csv'
 
     # Connect to MySQL
     conn = connect_to_mysql(host, user, password, database)

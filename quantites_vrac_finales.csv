@@ -1,0 +1,778 @@
+Anglais,Baguettes,Pièce,FALSE,0,0,"0,5",0
+Anglais,Œufs,Pièce,FALSE,0,0,2,0
+Anglais,Bacon,Tranche,FALSE,0,0,2,0
+Anglais,Tomate,Kg,FALSE,0,0,"0,1",0
+Baguette camembert,Baguettes,Pièce,FALSE,0,0,"0,5",0
+Baguette camembert,Camembert,Pièce,FALSE,0,0,0,0
+Baguette savoyarde (végé),Baguettes,Pièce,FALSE,0,0,"0,5",0
+Baguette savoyarde (végé),Jambon,Tranche,FALSE,0,0,2,0
+Baguette savoyarde (végé),Fromage (tranche),Tranche,FALSE,0,0,2,0
+Baguette savoyarde (végé),Salade,Pièce,FALSE,0,0,"0,05",0
+Barbecue,Viande BBQ,Kg,FALSE,0,0,"0,2",0
+Barbecue,Aloumi,Kg,TRUE,0,0,"0,15",0
+Barbecue,Champignons,Kg,TRUE,0,0,"0,1",0
+Barbecue,Fromage (chèvre frais),Kg,TRUE,0,0,"0,1",0
+Barbecue,Pomme de terre,Kg,FALSE,0,0,"0,15",0
+Barbecue,Poivrons,Kg,FALSE,0,0,"0,1",0
+Barbecue,Salade,Pièce,FALSE,0,0,"0,1",0
+Barbecue,Tomate,Kg,FALSE,0,0,"0,1",0
+Barbecue,Concombre,Kg,FALSE,0,0,"0,1",0
+Barbecue,Mayonnaise,Condiment,FALSE,0,0,0,0
+Barbecue,Ketchup,Condiment,FALSE,0,0,0,0
+Boulettes sauce tomate,Viande hachée,Kg,FALSE,0,0,0,0
+Boulettes sauce tomate,Œufs,Pièce,FALSE,0,0,0,0
+Boulettes sauce tomate,Chapelure,Kg,FALSE,"0,02","0,02","0,03","0,03"
+Boulettes sauce tomate,Fromage (râpé),Kg,FALSE,0,0,0,0
+Boulettes sauce tomate,Ail,Condiment,FALSE,0,0,0,0
+Boulettes sauce tomate,Persil,Condiment,FALSE,0,0,0,0
+Boulettes sauce tomate,Tomates pelées,Kg,FALSE,"0,1","0,1","0,15","0,12"
+Boulettes sauce tomate,Oignons,Kg,FALSE,0,0,0,0
+Boulettes sauce tomate,Huile d'olive,Condiment,FALSE,0,0,0,0
+Boulettes sauce tomate,Basilic,Condiment,FALSE,0,0,0,0
+Boulettes sauce tomate,Origan,Condiment,FALSE,0,0,0,0
+Boulettes sauce tomate,Pois chiches,Kg,TRUE,"0,04","0,04","0,06","0,05"
+Boulettes sauce tomate,Riz,Kg,FALSE,"0,05","0,05","0,07","0,06"
+Boulettes sauce tomate (végé),Pois chiches,Kg,FALSE,"0,04","0,04","0,07","0,06"
+Boulettes sauce tomate (végé),Chapelure,Kg,FALSE,"0,02","0,02","0,03","0,03"
+Boulettes sauce tomate (végé),Œufs,Pièce,FALSE,0,0,0,0
+Boulettes sauce tomate (végé),Fromage (râpé),Kg,FALSE,0,0,0,0
+Boulettes sauce tomate (végé),Ail,Condiment,FALSE,0,0,0,0
+Boulettes sauce tomate (végé),Persil,Condiment,FALSE,0,0,0,0
+Boulettes sauce tomate (végé),Cumin,Condiment,FALSE,0,0,0,0
+Boulettes sauce tomate (végé),Paprika,Condiment,FALSE,0,0,0,0
+Boulettes sauce tomate (végé),Tomates pelées,Kg,FALSE,"0,1","0,1","0,15","0,12"
+Boulettes sauce tomate (végé),Oignons,Kg,FALSE,0,0,0,0
+Boulettes sauce tomate (végé),Huile d'olive,Condiment,FALSE,0,0,0,0
+Boulettes sauce tomate (végé),Basilic,Condiment,FALSE,0,0,0,0
+Boulettes sauce tomate (végé),Origan,Condiment,FALSE,0,0,0,0
+Boulettes sauce tomate (végé),Riz,Kg,FALSE,"0,05","0,05","0,07","0,06"
+Burger,Pain burger,Pièce,FALSE,0,0,1,0
+Burger,Steak haché,Pièce,FALSE,0,0,1,0
+Burger,Tomate,Kg,FALSE,0,0,"0,1",0
+Burger,Fromage (tranche),Tranche,FALSE,0,0,1,0
+Burger,Oignons,Kg,FALSE,0,0,"0,025",0
+Burger,Salade,Pièce,FALSE,0,0,"0,1",0
+Burger,Pomme de terre,Kg,FALSE,0,0,"0,2",0
+Burger,Burger végétarien,Pièce,TRUE,0,0,1,0
+Burger (végé),Pain burger,Pièce,FALSE,0,0,1,0
+Burger (végé),Tomate,Kg,FALSE,0,0,"0,1",0
+Burger (végé),Fromage (tranche),Tranche,FALSE,0,0,1,0
+Burger (végé),Oignons,Kg,FALSE,0,0,"0,025",0
+Burger (végé),Salade,Pièce,FALSE,0,0,"0,1",0
+Burger (végé),Pomme de terre,Kg,FALSE,0,0,"0,2",0
+Burger (végé),Burger végétarien,Pièce,TRUE,0,0,1,0
+Chili con carne,Viande hachée,Kg,FALSE,0,0,0,0
+Chili con carne,Haricots rouge,Kg,FALSE,"0,04","0,04","0,06","0,05"
+Chili con carne,Tomates pelées,Kg,FALSE,"0,1","0,1","0,15","0,12"
+Chili con carne,Oignons,Kg,FALSE,0,0,0,0
+Chili con carne,Ail,Condiment,FALSE,0,0,0,0
+Chili con carne,Poivrons,Kg,FALSE,0,0,0,0
+Chili con carne,Maïs,Kg,FALSE,0,0,0,0
+Chili con carne,Piment,Condiment,FALSE,0,0,0,0
+Chili con carne,Cumin,Condiment,FALSE,0,0,0,0
+Chili con carne,Paprika,Condiment,FALSE,0,0,0,0
+Chili con carne,Coriandre,Condiment,FALSE,0,0,0,0
+Chili con carne,Huile d'olive,Condiment,FALSE,0,0,0,0
+Chili con carne,Riz,Kg,FALSE,"0,05","0,05","0,07","0,06"
+Chili sin carne (végé),Haricots rouge,Kg,FALSE,"0,05","0,05","0,07","0,06"
+Chili sin carne (végé),Tomates pelées,Kg,FALSE,"0,1","0,1","0,15","0,12"
+Chili sin carne (végé),Oignons,Kg,FALSE,0,0,0,0
+Chili sin carne (végé),Ail,Condiment,FALSE,0,0,0,0
+Chili sin carne (végé),Poivrons,Kg,FALSE,0,0,0,0
+Chili sin carne (végé),Maïs,Kg,FALSE,0,0,0,0
+Chili sin carne (végé),Piment,Condiment,FALSE,0,0,0,0
+Chili sin carne (végé),Cumin,Condiment,FALSE,0,0,0,0
+Chili sin carne (végé),Paprika,Condiment,FALSE,0,0,0,0
+Chili sin carne (végé),Coriandre,Condiment,FALSE,0,0,0,0
+Chili sin carne (végé),Huile d'olive,Condiment,FALSE,0,0,0,0
+Chili sin carne (végé),Riz,Kg,FALSE,"0,05","0,05","0,07","0,06"
+Couscous,Cuisse de poulet,Kg,FALSE,0,0,0,0
+Couscous,Mergez,Kg,FALSE,0,0,0,0
+Couscous,Semoule,Kg,FALSE,"0,06","0,05","0,075","0,07"
+Couscous,Tomate,Kg,FALSE,0,0,"0,1",0
+Couscous,Poivrons,Kg,FALSE,0,0,"0,15",0
+Couscous,Oignons,Kg,FALSE,0,0,"0,02",0
+Couscous,Ail,Condiment,FALSE,0,0,0,0
+Couscous,Pois chiches,Kg,FALSE,"0,01","0,01","0,02","0,02"
+Couscous,Huile d'olive,Condiment,FALSE,0,0,0,0
+Couscous (végé),Semoule,Kg,FALSE,"0,06","0,05","0,075","0,07"
+Couscous (végé),Tomate,Kg,FALSE,0,0,"0,1",0
+Couscous (végé),Poivrons,Kg,FALSE,0,0,"0,15",0
+Couscous (végé),Oignons,Kg,FALSE,0,0,"0,02",0
+Couscous (végé),Ail,Condiment,FALSE,0,0,0,0
+Couscous (végé),Pois chiches,Kg,FALSE,"0,02","0,02","0,05","0,04"
+Couscous (végé),Huile d'olive,Condiment,FALSE,0,0,0,0
+Croque fromage (végé),Pain,Tranche,FALSE,0,0,6,0
+Croque fromage (végé),Fromage (tranche),Tranche,FALSE,0,0,3,0
+Croque fromage (végé),Tomate,Kg,FALSE,0,0,"0,1",0
+Croque monsieur,Pain,Tranche,FALSE,0,0,6,0
+Croque monsieur,Jambon,Tranche,FALSE,0,0,"1,5",0
+Croque monsieur,Fromage (tranche),Tranche,FALSE,0,0,3,0
+Curry de légumes (végé),Carottes,Kg,FALSE,0,0,0,0
+Curry de légumes (végé),Pomme de terre,Kg,FALSE,0,0,0,0
+Curry de légumes (végé),Oignons,Kg,FALSE,0,0,0,0
+Curry de légumes (végé),Ail,Condiment,FALSE,0,0,0,0
+Curry de légumes (végé),Gingembre,Condiment,FALSE,0,0,0,0
+Curry de légumes (végé),Lait de coco,L,FALSE,"0,5","0,5","0,75","0,6"
+Curry de légumes (végé),Curry,Condiment,FALSE,0,0,0,0
+Curry de légumes (végé),Huile d'olive,Condiment,FALSE,0,0,0,0
+Curry de légumes (végé),Cumin,Condiment,FALSE,0,0,0,0
+Curry de légumes (végé),Coriandre,Condiment,FALSE,0,0,0,0
+Curry de légumes (végé),Citron,Condiment,FALSE,0,0,0,0
+Curry de légumes (végé),Riz,Kg,FALSE,"0,05","0,05","0,08","0,07"
+Fish-stick épinard purée,Fish Stick,Pièce,FALSE,0,0,0,0
+Fish-stick épinard purée,Epinards,Kg,FALSE,0,0,0,0
+Fish-stick épinard purée,Ail,Condiment,FALSE,0,0,0,0
+Fish-stick épinard purée,Oignons,Kg,FALSE,0,0,0,0
+Fish-stick épinard purée,Beurre,Condiment,FALSE,0,0,0,0
+Fish-stick épinard purée,Crème fraiche,L,FALSE,0,0,0,0
+Fish-stick épinard purée,Pomme de terre,Kg,FALSE,0,0,0,0
+Fish-stick épinard purée,Lait,L,FALSE,0,0,0,0
+Fish-stick épinard purée,Œufs,Pièce,FALSE,0,0,0,0
+Fish-stick épinard purée,Noix de muscade,Condiment,FALSE,0,0,0,0
+Fish-stick gratin de courgette,Fish Stick,Pièce,FALSE,0,0,0,0
+Fish-stick gratin de courgette,Crème fraiche,L,FALSE,0,0,0,0
+Fish-stick gratin de courgette,Fromage (râpé),Kg,FALSE,0,0,0,0
+Fish-stick gratin de courgette,Ail,Condiment,FALSE,0,0,0,0
+Fish-stick gratin de courgette,Beurre,Condiment,FALSE,0,0,0,0
+Fish-stick gratin de courgette,Pomme de terre,Kg,FALSE,0,0,0,0
+Fish-stick gratin de courgette,Lait,L,FALSE,0,0,0,0
+Fish-stick gratin de courgette,Œufs,Pièce,FALSE,0,0,0,0
+Fish-stick gratin de courgette,Noix de muscade,Condiment,FALSE,0,0,0,0
+Frites (commandées),Frites commandées,Pièce,FALSE,0,0,0,0
+Frites (maison),Pomme de terre,Kg,FALSE,0,0,0,0
+Frites (maison),Huile friture,L,FALSE,0,0,0,0
+Frites (maison),Mayonnaise,Kg,FALSE,0,0,0,0
+Frites (maison),Ketchup,Kg,FALSE,0,0,0,0
+Hachis parmentier,Viande hachée,Kg,FALSE,0,0,0,0
+Hachis parmentier,Oignons,Kg,FALSE,0,0,0,0
+Hachis parmentier,Ail,Condiment,FALSE,0,0,0,0
+Hachis parmentier,Thym,Condiment,FALSE,0,0,0,0
+Hachis parmentier,Huile d'olive,Condiment,FALSE,0,0,0,0
+Hachis parmentier,Pomme de terre,Kg,FALSE,0,0,0,0
+Hachis parmentier,Lait,L,FALSE,0,0,0,0
+Hachis parmentier,Œufs,Pièce,FALSE,0,0,0,0
+Hachis parmentier,Noix de muscade,Condiment,FALSE,0,0,0,0
+Hachis parmentier,Lentilles vertes,Kg,TRUE,"0,05","0,04","0,06","0,05"
+Hachis parmentier,Fromage (râpé),Kg,FALSE,0,0,0,0
+Hachis parmentier,Chou blanc,Kg,FALSE,0,0,0,0
+Hachis parmentier (végé),Lentilles vertes,Kg,FALSE,"0,05","0,04","0,06","0,05"
+Hachis parmentier (végé),Oignons,Kg,FALSE,0,0,0,0
+Hachis parmentier (végé),Ail,Condiment,FALSE,0,0,0,0
+Hachis parmentier (végé),Thym,Condiment,FALSE,0,0,0,0
+Hachis parmentier (végé),Huile d'olive,Condiment,FALSE,0,0,0,0
+Hachis parmentier (végé),Pomme de terre,Kg,FALSE,0,0,0,0
+Hachis parmentier (végé),Lait,L,FALSE,0,0,0,0
+Hachis parmentier (végé),Œufs,Pièce,FALSE,0,0,0,0
+Hachis parmentier (végé),Noix de muscade,Condiment,FALSE,0,0,0,0
+Hachis parmentier (végé),Fromage (râpé),Kg,FALSE,0,0,0,0
+Hachis parmentier (végé),Chou blanc,Kg,FALSE,0,0,0,0
+Kefta hummus,Viande hachée,Kg,FALSE,"0,1","0,1","0,15","0,12"
+Kefta hummus,Ail,Condiment,FALSE,0,0,0,0
+Kefta hummus,Oignons,Kg,FALSE,"0,025","0,025","0,025","0,025"
+Kefta hummus,Pois chiches,Kg,FALSE,"0,04","0,04","0,06","0,06"
+Kefta hummus,Citron,Pièce,FALSE,"0,25","0,25","0,25","0,25"
+Kefta hummus,Tahini,Kg,FALSE,"0,005","0,005","0,005","0,005"
+Kefta hummus,Huile d'olive,Condiment,FALSE,0,0,0,0
+Kefta hummus,Farine,Kg,FALSE,"0,125","0,125","0,125","0,125"
+Kefta hummus,Yaourt,Kg,FALSE,"31,25","31,25","31,25","31,25"
+Kefta hummus,Levure chimique,Condiment,FALSE,0,0,0,0
+Kefta hummus,Levure boulangère,Kg,FALSE,"0,002","0,002","0,002","0,002"
+Lasagne,Viande hachée,Kg,FALSE,0,0,0,0
+Lasagne,Tomates pelées,Kg,FALSE,"0,08","0,08","0,1","0,1"
+Lasagne,Carottes,Kg,FALSE,0,0,0,0
+Lasagne,Oignons,Kg,FALSE,0,0,0,0
+Lasagne,Ail,Condiment,FALSE,0,0,0,0
+Lasagne,Thym,Condiment,FALSE,0,0,0,0
+Lasagne,Laurier,Condiment,FALSE,0,0,0,0
+Lasagne,Huile d'olive,Condiment,FALSE,0,0,0,0
+Lasagne,Beurre,Kg,FALSE,"0,01","0,01","0,01","0,01"
+Lasagne,Farine,Kg,FALSE,"0,01","0,01","0,01","0,01"
+Lasagne,Lait,L,FALSE,"0,1","0,1","0,1","0,1"
+Lasagne,Noix de muscade,Condiment,FALSE,0,0,0,0
+Lasagne,Protéine de soja,Kg,TRUE,"0,3","0,3","0,5","0,4"
+Lasagne,Pâtes à lasagne,Kg,FALSE,"0,08","0,07","0,11","0,1"
+Lasagne (végé),Protéine de soja,Kg,FALSE,"0,3","0,3","0,5","0,4"
+Lasagne (végé),Tomates pelées,Kg,FALSE,"0,08","0,08","0,1","0,1"
+Lasagne (végé),Carottes,Kg,FALSE,0,0,0,0
+Lasagne (végé),Oignons,Kg,FALSE,0,0,0,0
+Lasagne (végé),Ail,Condiment,FALSE,0,0,0,0
+Lasagne (végé),Thym,Condiment,FALSE,0,0,0,0
+Lasagne (végé),Laurier,Condiment,FALSE,0,0,0,0
+Lasagne (végé),Huile d'olive,Condiment,FALSE,0,0,0,0
+Lasagne (végé),Beurre,Kg,FALSE,"0,01","0,01","0,01","0,01"
+Lasagne (végé),Farine,Kg,FALSE,"0,01","0,01","0,01","0,01"
+Lasagne (végé),Lait,L,FALSE,"0,1","0,1","0,1","0,1"
+Lasagne (végé),Noix de muscade,Condiment,FALSE,0,0,0,0
+Lasagne (végé),Pâtes à lasagne,Kg,FALSE,"0,08","0,07","0,1","0,09"
+Lentilles compote purée (végé),Lentilles vertes,Kg,FALSE,"0,5","0,4","0,6","0,5"
+Lentilles compote purée (végé),Pommes,Kg,FALSE,0,0,0,0
+Lentilles compote purée (végé),Sucre,Kg,FALSE,"0,005","0,005","0,005","0,005"
+Lentilles compote purée (végé),Citron,Pièce,FALSE,0,0,0,0
+Lentilles compote purée (végé),Pomme de terre,Kg,FALSE,0,0,0,0
+Lentilles compote purée (végé),Lait,L,FALSE,0,0,0,0
+Lentilles compote purée (végé),Œufs,Pièce,FALSE,0,0,0,0
+Lentilles compote purée (végé),Noix de muscade,Condiment,FALSE,0,0,0,0
+Omelette,Œufs,Pièce,FALSE,0,0,3,0
+Omelette,Tomate,Kg,FALSE,0,0,"0,1",0
+Omelette,Fromage (râpé),Kg,FALSE,0,0,"0,05",0
+Omelette,Jambon,Tranche,FALSE,0,0,1,0
+Omelette,Pain,Tranche,FALSE,0,0,4,0
+Omelette (végé),Œufs,Pièce,FALSE,0,0,3,0
+Omelette (végé),Tomate,Kg,FALSE,0,0,"0,1",0
+Omelette (végé),Fromage (râpé),Kg,FALSE,0,0,"0,05",0
+Omelette (végé),Pain,Tranche,FALSE,0,0,4,0
+Pain saucisse,Saucisses,Pièce,FALSE,0,0,1,0
+Pain saucisse,Baguettes,Pièce,FALSE,0,0,"0,3",0
+Pain saucisse,Oignons,Kg,FALSE,0,0,"0,025",0
+Pain saucisse,Aloumi,Kg,TRUE,0,0,"0,15",0
+Pain saucisse,Salade,Pièce,FALSE,0,0,"0,05",0
+Pâtes courgette (végé),Spirelli,Kg,FALSE,"0,11","0,9","0,15","0,13"
+Pâtes courgette (végé),Courgette,Kg,FALSE,0,0,"0,2",0
+Pâtes courgette (végé),Fromage (râpé),Kg,FALSE,0,0,"0,04",0
+Pâtes courgette (végé),Tomate,Kg,FALSE,0,0,"0,05",0
+Pâtes courgette (végé),Oignons,Kg,FALSE,0,0,"0,025",0
+Pâtes courgette (végé),Ail,Condiment,FALSE,0,0,0,0
+Pâtes courgette (végé),Huile d'olive,Condiment,FALSE,0,0,0,0
+Pâtes courgette lardons,Spirelli,Kg,FALSE,"0,1","0,8","0,15","0,12"
+Pâtes courgette lardons,Courgette,Kg,FALSE,0,0,"0,2",0
+Pâtes courgette lardons,Fromage (râpé),Kg,FALSE,0,0,"0,04",0
+Pâtes courgette lardons,Tomate,Kg,FALSE,0,0,"0,05",0
+Pâtes courgette lardons,Oignons,Kg,FALSE,0,0,"0,025",0
+Pâtes courgette lardons,Ail,Condiment,FALSE,0,0,0,0
+Pâtes courgette lardons,Huile d'olive,Condiment,FALSE,0,0,0,0
+Pâtes courgette lardons,Lardons,Kg,FALSE,0,0,"0,1",0
+Pâtes fromage (végé),Macaroni,Kg,FALSE,"0,11","0,9","0,15","0,13"
+Pâtes fromage (végé),Fromage (râpé),Kg,FALSE,0,0,0,0
+Pâtes fromage (végé),Crème fraiche,L,FALSE,0,0,0,0
+Pâtes fromage (végé),Noix de muscade,Condiment,FALSE,0,0,0,0
+Pâtes jambon fromage,Macaroni,Kg,FALSE,"0,1","0,8","0,15","0,12"
+Pâtes jambon fromage,Fromage (râpé),Kg,FALSE,0,0,"0,05",0
+Pâtes jambon fromage,Crème fraiche,L,FALSE,0,0,"0,2",0
+Pâtes jambon fromage,Noix de muscade,Condiment,FALSE,0,0,0,0
+Pâtes jambon fromage,Jambon (tranche épaisse),Kg,FALSE,0,0,"0,1",0
+Pâtes jambon fromage,Tomate,Kg,TRUE,0,0,"0,2",0
+Pâtes jambon fromage,Mozzarella,Pièce,TRUE,0,0,"0,4",0
+Pâtes tomate mozza pesto (végé),Spirelli,Kg,FALSE,"0,1","0,8","0,15","0,12"
+Pâtes tomate mozza pesto (végé),Tomate,Kg,FALSE,0,0,"0,15",0
+Pâtes tomate mozza pesto (végé),Pesto,Kg,FALSE,"0,04","0,04","0,05","0,05"
+Pâtes tomate mozza pesto (végé),Mozzarella,Pièce,FALSE,0,0,1,0
+Pâtes tomate mozza pesto (végé),Huile d'olive,Condiment,FALSE,0,0,0,0
+Pitta,Pain pitta,Pièce,FALSE,0,0,2,0
+Pitta,Viande à pitta,Kg,FALSE,0,0,"0,15",0
+Pitta,Oignons,Kg,FALSE,0,0,"0,025",0
+Pitta,Tomate,Kg,FALSE,0,0,"0,1",0
+Pitta,Concombre,Kg,FALSE,0,0,"0,075",0
+Pitta,Poivrons,Kg,FALSE,0,0,"0,1",0
+Pitta,Olive,Kg,FALSE,0,0,"0,04",0
+Pitta,Salade,Pièce,FALSE,0,0,"0,05",0
+Pitta,Feta,Kg,FALSE,0,0,"0,04",0
+Pitta,Yaourt,Kg,FALSE,0,0,"0,02",0
+Pitta,Citron,Pièce,FALSE,0,0,"0,1",0
+Pitta (végé),Pain pitta,Pièce,FALSE,0,0,0,0
+Pitta (végé),Oignons,Kg,FALSE,0,0,"0,025",0
+Pitta (végé),Tomate,Kg,FALSE,0,0,"0,1",0
+Pitta (végé),Concombre,Kg,FALSE,0,0,"0,075",0
+Pitta (végé),Poivrons,Kg,FALSE,0,0,"0,1",0
+Pitta (végé),Olive,Kg,FALSE,0,0,"0,04",0
+Pitta (végé),Salade,Pièce,FALSE,0,0,"0,05",0
+Pitta (végé),Feta,Kg,FALSE,0,0,"0,06",0
+Pitta (végé),Yaourt,Kg,FALSE,0,0,"0,02",0
+Pitta (végé),Citron,Pièce,FALSE,0,0,"0,1",0
+Pizza,Pâte à pizza,Pièce,FALSE,0,0,0,0
+Pizza,Passata,Kg,FALSE,"0,075","0,075","0,15","0,15"
+Pizza,Ail,Condiment,FALSE,0,0,0,0
+Pizza,Origan,Condiment,FALSE,0,0,0,0
+Pizza,Basilic,Condiment,FALSE,0,0,0,0
+Pizza,Huile d'olive,Condiment,FALSE,0,0,0,0
+Pizza,Olive,Kg,FALSE,0,0,0,0
+Pizza,Mozzarella,Kg,FALSE,0,0,0,0
+Pizza,Fromage (râpé),Kg,FALSE,0,0,0,0
+Pizza,Champignons,Kg,FALSE,0,0,0,0
+Pizza,Poivrons,Kg,FALSE,0,0,0,0
+Pizza,Courgette,Kg,FALSE,0,0,0,0
+Pizza,Jambon,Tranche,FALSE,0,0,0,0
+Pizza (commandées),Pizza commandées,Pièce,FALSE,0,0,0,0
+Pizza (végé),Pâte à pizza,Pièce,FALSE,0,0,0,0
+Pizza (végé),Passata,Kg,FALSE,"0,075","0,075","0,15","0,15"
+Pizza (végé),Ail,Condiment,FALSE,0,0,0,0
+Pizza (végé),Origan,Condiment,FALSE,0,0,0,0
+Pizza (végé),Basilic,Condiment,FALSE,0,0,0,0
+Pizza (végé),Huile d'olive,Condiment,FALSE,0,0,0,0
+Pizza (végé),Olive,Kg,FALSE,0,0,0,0
+Pizza (végé),Mozzarella,Kg,FALSE,0,0,0,0
+Pizza (végé),Fromage (râpé),Kg,FALSE,0,0,0,0
+Pizza (végé),Champignons,Kg,FALSE,0,0,0,0
+Pizza (végé),Poivrons,Kg,FALSE,0,0,0,0
+Pizza (végé),Courgette,Kg,FALSE,0,0,0,0
+Poulet curry,Blanc de poulet,Kg,FALSE,0,0,"0,15",0
+Poulet curry,Riz,Kg,FALSE,"0,05","0,05","0,08","0,07"
+Poulet curry,Poivrons,Kg,FALSE,0,0,"0,1",0
+Poulet curry,Tofu,Kg,TRUE,0,0,"0,15",0
+Poulet curry,Lait de coco,L,FALSE,"0,5","0,5","0,75","0,6"
+Poulet curry,Courgette,Kg,FALSE,0,0,0,0
+Poulet curry,Oignons,Kg,FALSE,0,0,0,0
+Poulet curry,Ail,Condiment,FALSE,0,0,0,0
+Poulet curry,Gingembre,Condiment,FALSE,0,0,0,0
+Poulet curry,Curry,Condiment,FALSE,0,0,0,0
+Poulet curry,Cumin,Condiment,FALSE,0,0,0,0
+Poulet curry,Huile d'olive,Condiment,FALSE,0,0,0,0
+Poulet curry,Coriandre,Condiment,FALSE,0,0,0,0
+Poulet curry,Sauce soja,Condiment,FALSE,0,0,0,0
+Ratatouille,Aubergines,Kg,FALSE,0,0,0,0
+Ratatouille,Courgette,Kg,FALSE,0,0,0,0
+Ratatouille,Poivrons,Kg,FALSE,0,0,0,0
+Ratatouille,Tomate,Kg,FALSE,0,0,0,0
+Ratatouille,Oignons,Kg,FALSE,0,0,0,0
+Ratatouille,Ail,Condiment,FALSE,0,0,0,0
+Ratatouille,Herbes de provence,Condiment,FALSE,0,0,0,0
+Ratatouille,Laurier,Condiment,FALSE,0,0,0,0
+Ratatouille,Huile d'olive,Condiment,FALSE,0,0,0,0
+Ratatouille,Saucisses,Pièce,FALSE,0,0,0,0
+Ratatouille,Pois chiches,Kg,TRUE,"0,02","0,02","0,05","0,04"
+Ratatouille,Semoule,Kg,FALSE,"0,06","0,05","0,08","0,07"
+Ratatouille (végé),Aubergines,Kg,FALSE,0,0,0,0
+Ratatouille (végé),Courgette,Kg,FALSE,0,0,0,0
+Ratatouille (végé),Poivrons,Kg,FALSE,0,0,0,0
+Ratatouille (végé),Tomate,Kg,FALSE,0,0,0,0
+Ratatouille (végé),Oignons,Kg,FALSE,0,0,0,0
+Ratatouille (végé),Ail,Condiment,FALSE,0,0,0,0
+Ratatouille (végé),Herbes de provence,Condiment,FALSE,0,0,0,0
+Ratatouille (végé),Laurier,Condiment,FALSE,0,0,0,0
+Ratatouille (végé),Huile d'olive,Condiment,FALSE,0,0,0,0
+Ratatouille (végé),Pois chiches,Kg,FALSE,"0,03","0,02","0,05","0,04"
+Ratatouille (végé),Semoule,Kg,FALSE,"0,06","0,05","0,08","0,07"
+Riz cantonais,Blanc de poulet,Kg,FALSE,0,0,"0,15",0
+Riz cantonais,Tofu,Kg,TRUE,0,0,"0,15",0
+Riz cantonais,Poivrons,Kg,FALSE,0,0,"0,1",0
+Riz cantonais,Riz,Kg,FALSE,"0,06","0,05","0,1","0,09"
+Riz cantonais,Oignons,Kg,FALSE,0,0,"0,025",0
+Riz cantonais,Courgette,Kg,FALSE,0,0,"0,1",0
+Riz cantonais,Ail,Condiment,FALSE,0,0,0,0
+Riz cantonais,Huile d'olive,Condiment,FALSE,0,0,0,0
+Riz cantonais,Sauce soja,Condiment,FALSE,0,0,0,0
+Riz cantonais (végé),Œufs,Pièce,FALSE,0,0,"1,5",0
+Riz cantonais (végé),Poivrons,Kg,FALSE,0,0,"0,1",0
+Riz cantonais (végé),Riz,Kg,FALSE,"0,06","0,05","0,11","0,09"
+Riz cantonais (végé),Oignons,Kg,FALSE,0,0,"0,025",0
+Riz cantonais (végé),Courgette,Kg,FALSE,0,0,"0,1",0
+Riz cantonais (végé),Ail,Condiment,FALSE,0,0,0,0
+Riz cantonais (végé),Huile d'olive,Condiment,FALSE,0,0,0,0
+Riz cantonais (végé),Sauce soja,Condiment,FALSE,0,0,0,0
+Saucisse compote purée,Saucisses,Pièce,FALSE,0,0,0,0
+Saucisse compote purée,Lentilles vertes,Kg,TRUE,"0,05","0,04","0,08","0,07"
+Saucisse compote purée,Pommes,Kg,FALSE,0,0,0,0
+Saucisse compote purée,Sucre,Kg,FALSE,"0,005","0,005","0,005","0,005"
+Saucisse compote purée,Citron,Pièce,FALSE,0,0,0,0
+Saucisse compote purée,Pomme de terre,Kg,FALSE,0,0,0,0
+Saucisse compote purée,Lait,L,FALSE,0,0,0,0
+Saucisse compote purée,Œufs,Pièce,FALSE,0,0,0,0
+Saucisse compote purée,Noix de muscade,Condiment,FALSE,0,0,0,0
+Saucisse patate camembert,Saucisses,Pièce,FALSE,0,0,1,0
+Saucisse patate camembert,Pomme de terre,Kg,FALSE,0,0,"0,15",0
+Saucisse patate camembert,Camembert,Pièce,FALSE,0,0,"0,25",0
+Saucisse patate camembert,Aloumi,Kg,TRUE,0,0,"0,15",0
+Saucisse patate camembert,Baguettes,Pièce,FALSE,0,0,"0,3",0
+Soupe carottes + Tartines jambon/fromage,Carottes,Kg,FALSE,0,0,0,0
+Soupe carottes + Tartines jambon/fromage,Oignons,Kg,FALSE,0,0,0,0
+Soupe carottes + Tartines jambon/fromage,Ail,Condiment,FALSE,0,0,0,0
+Soupe carottes + Tartines jambon/fromage,Pomme de terre,Kg,FALSE,0,0,0,0
+Soupe carottes + Tartines jambon/fromage,Bouillon de légumes,Condiment,FALSE,0,0,0,0
+Soupe carottes + Tartines jambon/fromage,Crème fraiche,L,FALSE,0,0,0,0
+Soupe carottes + Tartines jambon/fromage,Pain,Tranche,FALSE,0,0,0,0
+Soupe carottes + Tartines jambon/fromage,Jambon,Tranche,FALSE,0,0,0,0
+Soupe carottes + Tartines jambon/fromage,Fromage (tranche),Tranche,FALSE,0,0,0,0
+Soupe courgettes + Tartines jambon/fromage,Pain,Tranche,FALSE,0,0,0,0
+Soupe courgettes + Tartines jambon/fromage,Jambon,Tranche,FALSE,0,0,0,0
+Soupe courgettes + Tartines jambon/fromage,Fromage (tranche),Tranche,FALSE,0,0,0,0
+Soupe courgettes + Tartines jambon/fromage,Courgette,Kg,FALSE,0,0,0,0
+Soupe courgettes + Tartines jambon/fromage,Oignons,Kg,FALSE,0,0,0,0
+Soupe courgettes + Tartines jambon/fromage,Ail,Condiment,FALSE,0,0,0,0
+Soupe courgettes + Tartines jambon/fromage,Pomme de terre,Kg,FALSE,0,0,0,0
+Soupe courgettes + Tartines jambon/fromage,Bouillon de légumes,Condiment,FALSE,0,0,0,0
+Soupe courgettes + Tartines jambon/fromage,Huile d'olive,Condiment,FALSE,0,0,0,0
+Soupe tomates + Tartines jambon/fromage,Pain,Tranche,FALSE,0,0,0,0
+Soupe tomates + Tartines jambon/fromage,Jambon,Tranche,FALSE,0,0,0,0
+Soupe tomates + Tartines jambon/fromage,Fromage (tranche),Tranche,FALSE,0,0,0,0
+Soupe tomates + Tartines jambon/fromage,Tomates pelées,Kg,FALSE,"0,15","0,15","0,2","0,2"
+Soupe tomates + Tartines jambon/fromage,Oignons,Kg,FALSE,0,0,0,0
+Soupe tomates + Tartines jambon/fromage,Ail,Condiment,FALSE,0,0,0,0
+Soupe tomates + Tartines jambon/fromage,Carottes,Kg,FALSE,0,0,0,0
+Soupe tomates + Tartines jambon/fromage,Bouillon de légumes,Condiment,FALSE,0,0,0,0
+Soupe tomates + Tartines jambon/fromage,Huile d'olive,Condiment,FALSE,0,0,0,0
+Soupe tomates + Tartines jambon/fromage,Sucre,Condiment,FALSE,"0,005","0,005","0,005","0,005"
+Soupe tomates + Tartines jambon/fromage,Basilic,Condiment,FALSE,0,0,0,0
+Spaghetti bolognaise,Viande hachée,Kg,FALSE,0,0,"0,09",0
+Spaghetti bolognaise,Tomates pelées,Kg,FALSE,"0,12","0,12","0,18","0,17"
+Spaghetti bolognaise,Carottes,Kg,FALSE,0,0,"0,09",0
+Spaghetti bolognaise,Oignons,Kg,FALSE,0,0,"0,06",0
+Spaghetti bolognaise,Ail,Condiment,FALSE,0,0,0,0
+Spaghetti bolognaise,Spaghetti,Kg,FALSE,"0,1","0,8","0,14","0,12"
+Spaghetti bolognaise,Thym,Condiment,FALSE,0,0,0,0
+Spaghetti bolognaise,Laurier,Condiment,FALSE,0,0,0,0
+Spaghetti bolognaise,Huile d'olive,Condiment,FALSE,0,0,0,0
+Spaghetti bolognaise,Protéine de soja,Kg,TRUE,"0,04","0,03","0,08","0,06"
+Spaghetti bolognaise,Fromage (râpé),Kg,FALSE,0,0,"0,04",0
+Spaghetti bolognaise (végé),Protéine de soja,Kg,FALSE,"0,04","0,03","0,08","0,06"
+Spaghetti bolognaise (végé),Tomates pelées,Kg,FALSE,"0,12","0,12","0,18","0,17"
+Spaghetti bolognaise (végé),Carottes,Kg,FALSE,0,0,"0,09",0
+Spaghetti bolognaise (végé),Oignons,Kg,FALSE,0,0,"0,06",0
+Spaghetti bolognaise (végé),Ail,Condiment,FALSE,0,0,0,0
+Spaghetti bolognaise (végé),Spaghetti,Kg,FALSE,"0,1","0,8","0,14","0,12"
+Spaghetti bolognaise (végé),Thym,Condiment,FALSE,0,0,0,0
+Spaghetti bolognaise (végé),Laurier,Condiment,FALSE,0,0,0,0
+Spaghetti bolognaise (végé),Huile d'olive,Condiment,FALSE,0,0,0,0
+Spaghetti bolognaise (végé),Fromage (râpé),Kg,FALSE,0,0,"0,04",0
+Stoemp carottes lardons,Pomme de terre,Kg,FALSE,0,0,0,0
+Stoemp carottes lardons,Carottes,Kg,FALSE,0,0,0,0
+Stoemp carottes lardons,Oignons,Kg,FALSE,0,0,0,0
+Stoemp carottes lardons,Ail,Condiment,FALSE,0,0,0,0
+Stoemp carottes lardons,Lardons,Kg,FALSE,0,0,0,0
+Stoemp carottes lardons,Œufs,Pièce,FALSE,0,0,0,0
+Stoemp carottes lardons,Œufs,Pièce,TRUE,0,0,0,0
+Stoemp carottes lardons,Noix de muscade,Condiment,FALSE,0,0,0,0
+Stoemp carottes lardons,Lait,L,FALSE,0,0,0,0
+Stoemp carottes lardons,Beurre,Condiment,FALSE,0,0,0,0
+Stoemp carottes lardons (végé),Pomme de terre,Kg,FALSE,0,0,0,0
+Stoemp carottes lardons (végé),Carottes,Kg,FALSE,0,0,0,0
+Stoemp carottes lardons (végé),Oignons,Kg,FALSE,0,0,0,0
+Stoemp carottes lardons (végé),Ail,Condiment,FALSE,0,0,0,0
+Stoemp carottes lardons (végé),Œufs,Pièce,FALSE,0,0,0,0
+Stoemp carottes lardons (végé),Œufs,Pièce,FALSE,0,0,0,0
+Stoemp carottes lardons (végé),Noix de muscade,Condiment,FALSE,0,0,0,0
+Stoemp carottes lardons (végé),Lait,Kg,FALSE,0,0,0,0
+Stoemp carottes lardons (végé),Beurre,Condiment,FALSE,0,0,0,0
+Stoemp courgettes (végé),Pomme de terre,Kg,FALSE,0,0,0,0
+Stoemp courgettes (végé),Carottes,Kg,FALSE,0,0,0,0
+Stoemp courgettes (végé),Oignons,Kg,FALSE,0,0,0,0
+Stoemp courgettes (végé),Ail,Condiment,FALSE,0,0,0,0
+Stoemp courgettes (végé),Œufs,Pièce,FALSE,0,0,0,0
+Stoemp courgettes (végé),Œufs,Pièce,FALSE,0,0,0,0
+Stoemp courgettes (végé),Noix de muscade,Condiment,FALSE,0,0,0,0
+Stoemp courgettes (végé),Lait,L,FALSE,0,0,0,0
+Stoemp courgettes (végé),Beurre,Condiment,FALSE,0,0,0,0
+Stoemp courgettes lardons,Pomme de terre,Kg,FALSE,0,0,0,0
+Stoemp courgettes lardons,Courgette,Kg,FALSE,0,0,0,0
+Stoemp courgettes lardons,Oignons,Kg,FALSE,0,0,0,0
+Stoemp courgettes lardons,Ail,Condiment,FALSE,0,0,0,0
+Stoemp courgettes lardons,Lardons,Kg,FALSE,0,0,0,0
+Stoemp courgettes lardons,Œufs,Pièce,FALSE,0,0,0,0
+Stoemp courgettes lardons,Œufs,Pièce,TRUE,0,0,0,0
+Stoemp courgettes lardons,Noix de muscade,Condiment,FALSE,0,0,0,0
+Stoemp courgettes lardons,Lait,L,FALSE,0,0,0,0
+Stoemp courgettes lardons,Beurre,Condiment,FALSE,0,0,0,0
+Vol-au-vent,Blanc de poulet,Kg,FALSE,0,0,0,0
+Vol-au-vent,Champignons,Kg,FALSE,0,0,0,0
+Vol-au-vent,Crème fraiche,L,FALSE,0,0,0,0
+Vol-au-vent,Bouillon de légumes,Condiment,FALSE,0,0,0,0
+Vol-au-vent,Beurre,Condiment,FALSE,"0,01","0,01","0,0125","0,0125"
+Vol-au-vent,Farine,Kg,FALSE,"0,01","0,01","0,0125","0,0125"
+Vol-au-vent,Noix de muscade,Condiment,FALSE,0,0,0,0
+Vol-au-vent,Persil,Condiment,FALSE,0,0,0,0
+Vol-au-vent,Poireaux,Kg,TRUE,0,0,0,0
+Vol-au-vent,Carottes,Kg,TRUE,0,0,0,0
+Vol-au-vent,Riz,Kg,FALSE,"0,05","0,05","0,07","0,06"
+Vol-au-vent (végé),Champignons,Kg,FALSE,0,0,0,0
+Vol-au-vent (végé),Poireaux,Kg,FALSE,0,0,0,0
+Vol-au-vent (végé),Oignons,Kg,FALSE,0,0,0,0
+Vol-au-vent (végé),Carottes,Kg,FALSE,0,0,0,0
+Vol-au-vent (végé),Crème fraiche,L,FALSE,0,0,0,0
+Vol-au-vent (végé),Bouillon de légumes,Condiment,FALSE,0,0,0,0
+Vol-au-vent (végé),Beurre,Condiment,FALSE,"0,01","0,01","0,0125","0,0125"
+Vol-au-vent (végé),Farine,Kg,FALSE,"0,01","0,01","0,0125","0,0125"
+Vol-au-vent (végé),Noix de muscade,Condiment,FALSE,0,0,0,0
+Vol-au-vent (végé),Persil,Condiment,FALSE,0,0,0,0
+Vol-au-vent (végé),Riz,Kg,FALSE,"0,05","0,05","0,07","0,06"
+Wraps légumes (végé),Wraps,Pièce,FALSE,0,0,3,0
+Wraps légumes (végé),Concombre,Kg,FALSE,0,0,"0,05",0
+Wraps légumes (végé),Tomate,Kg,FALSE,0,0,"0,1",0
+Wraps légumes (végé),Maïs,Kg,FALSE,0,0,"0,03",0
+Wraps légumes (végé),Poivrons,Kg,FALSE,0,0,"0,1",0
+Wraps légumes (végé),Yaourt,Kg,FALSE,0,0,"0,04",0
+Wraps légumes (végé),Citron,Pièce,FALSE,0,0,"0,1",0
+Wraps légumes (végé),Feta,Kg,FALSE,0,0,"0,04",0
+Wraps poulet,Blanc de poulet,Kg,FALSE,0,0,"0,15",0
+Wraps poulet,Wraps,Pièce,FALSE,0,0,3,0
+Wraps poulet,Concombre,Kg,FALSE,0,0,"0,05",0
+Wraps poulet,Tomate,Kg,FALSE,0,0,"0,1",0
+Wraps poulet,Maïs,Kg,FALSE,0,0,"0,03",0
+Wraps poulet,Poivrons,Kg,FALSE,0,0,"0,1",0
+Wraps poulet,Yaourt,Kg,FALSE,0,0,"0,04",0
+Wraps poulet,Citron,Pièce,FALSE,0,0,"0,1",0
+Wraps poulet,Tofu,Kg,TRUE,0,0,"0,15",0
+Céréales (choco boule),Céréales (choco boule),Kg,FALSE,"0,08","0,08","0,1","0,1"
+Céréales (choco boule),Lait,L,FALSE,0,0,0,0
+Céréales (choco boule) + Jus,Céréales (choco boule),Kg,FALSE,"0,08","0,08","0,1","0,1"
+Céréales (choco boule) + Jus,Lait,L,FALSE,0,0,0,0
+Céréales (choco boule) + Jus,Jus de pomme,L,FALSE,"0,2","0,2","0,25","0,25"
+Céréales (corn flakes),Céréales (corn flakes),Kg,FALSE,"0,07","0,06","0,1","0,1"
+Céréales (corn flakes),Lait,L,FALSE,0,0,0,0
+Céréales (corn flakes) + Jus,Céréales (corn flakes),Kg,FALSE,"0,07","0,06","0,1","0,1"
+Céréales (corn flakes) + Jus,Lait,L,FALSE,0,0,0,0
+Céréales (corn flakes) + Jus,Jus de pomme,L,FALSE,"0,2","0,2","0,25","0,25"
+Céréales (crunchy choco banane),Crunchy choco-banane,Kg,FALSE,"0,06","0,05","0,08","0,07"
+Céréales (crunchy choco banane),Flocons d'avoine,L,FALSE,"0,01","0,01","0,02","0,02"
+Céréales (crunchy choco banane),Lait,L,FALSE,0,0,0,0
+Céréales (crunchy choco banane) + Jus,Crunchy choco-banane,Kg,FALSE,"0,06","0,05","0,08","0,07"
+Céréales (crunchy choco banane) + Jus,Flocons d'avoine,Kg,FALSE,"0,01","0,01","0,02","0,02"
+Céréales (crunchy choco banane) + Jus,Lait,L,FALSE,0,0,0,0
+Céréales (crunchy choco banane) + Jus,Jus de pomme,L,FALSE,"0,2","0,2","0,25","0,25"
+Céréales (crunchy nature),Crunchy,Kg,FALSE,"0,06","0,05","0,08","0,07"
+Céréales (crunchy nature),Flocons d'avoine,Kg,FALSE,"0,01","0,01","0,02","0,02"
+Céréales (crunchy nature),Lait,L,FALSE,0,0,0,0
+Céréales (crunchy nature) + Jus,Crunchy,Kg,FALSE,"0,06","0,05","0,08","0,07"
+Céréales (crunchy nature) + Jus,Flocons d'avoine,Kg,FALSE,"0,01","0,01","0,02","0,02"
+Céréales (crunchy nature) + Jus,Lait,L,FALSE,0,0,0,0
+Céréales (crunchy nature) + Jus,Jus de pomme,L,FALSE,"0,2","0,2","0,25","0,25"
+Céréales (rice criespies chocolat),Rice criespies chocolat,Kg,FALSE,"0,8","0,8","0,1","0,1"
+Céréales (rice criespies chocolat),Lait,L,FALSE,0,0,0,0
+Céréales (rice criespies chocolat) + Jus,Rice criespies chocolat,Kg,FALSE,"0,7","0,6","0,1","0,1"
+Céréales (rice criespies chocolat) + Jus,Lait,L,FALSE,0,0,0,0
+Céréales (rice criespies chocolat) + Jus,Jus de pomme,L,FALSE,"0,2","0,2","0,25","0,25"
+Couques,Pain au choclat,Pièce,FALSE,1,1,1,1
+Couques,Croissant,Pièce,FALSE,1,1,1,1
+Couques + Chocolat chaud,Pain au choclat,Pièce,FALSE,1,1,1,1
+Couques + Chocolat chaud,Croissant,Pièce,FALSE,1,1,1,1
+Couques + Chocolat chaud,Lait,L,FALSE,0,0,0,0
+Couques + Chocolat chaud,Chocolat noir,Kg,FALSE,"0,01","0,01","0,01","0,01"
+Couques + Jus,Pain au choclat,Pièce,FALSE,1,1,1,1
+Couques + Jus,Croissant,Pièce,FALSE,1,1,1,1
+Couques + Jus,Jus de pomme,L,FALSE,"0,2","0,2","0,25","0,25"
+Craquelin/Cramique,Craquelin,Tranche,FALSE,0,0,0,0
+Craquelin/Cramique,Cramique,Tranche,FALSE,0,0,0,0
+Craquelin/Cramique + Chocolat chaud,Craquelin,Tranche,FALSE,0,0,0,0
+Craquelin/Cramique + Chocolat chaud,Cramique,Tranche,FALSE,0,0,0,0
+Craquelin/Cramique + Chocolat chaud,Lait,L,FALSE,0,0,0,0
+Craquelin/Cramique + Chocolat chaud,Chocolat noir,Kg,FALSE,"0,01","0,01","0,01","0,01"
+Craquelin/Cramique + Jus,Craquelin,Tranche,FALSE,0,0,0,0
+Craquelin/Cramique + Jus,Cramique,Tranche,FALSE,0,0,0,0
+Craquelin/Cramique + Jus,Jus de pomme,L,FALSE,"0,2","0,2","0,25","0,25"
+Crèpes,Farine,Kg,FALSE,"0,1","0,1","0,1","0,1"
+Crèpes,Œufs,Pièce,FALSE,1,1,1,1
+Crèpes,Lait,L,FALSE,"0,2","0,2","0,2","0,2"
+Crèpes,Huile d'olive,Condiment,FALSE,0,0,0,0
+Crèpes,Beurre,Condiment,FALSE,0,0,0,0
+Crèpes,Sucre,Kg,FALSE,"0,025","0,025","0,025","0,025"
+Crèpes,Cassonade,Kg,FALSE,"0,025","0,025","0,025","0,025"
+Pain choco,Pain,Tranche,FALSE,0,0,0,0
+Pain choco,Chocolat à tartiner,Kg,FALSE,"0,025","0,025","0,025","0,025"
+Pain choco + Chocolat chaud,Pain,Tranche,FALSE,0,0,0,0
+Pain choco + Chocolat chaud,Chocolat à tartiner,Kg,FALSE,"0,025","0,025","0,025","0,025"
+Pain choco + Chocolat chaud,Lait,L,FALSE,0,0,0,0
+Pain choco + Chocolat chaud,Chocolat noir,Kg,FALSE,"0,01","0,01","0,01","0,01"
+Pain choco + Jus,Pain,Tranche,FALSE,0,0,0,0
+Pain choco + Jus,Chocolat à tartiner,Kg,FALSE,"0,025","0,025","0,025","0,025"
+Pain choco + Jus,Jus de pomme,L,FALSE,"0,2","0,2","0,25","0,25"
+Pain choco/confiture,Pain,Tranche,FALSE,0,0,0,0
+Pain choco/confiture,Chocolat à tartiner,Kg,FALSE,"0,025","0,025","0,025","0,025"
+Pain choco/confiture,Confiture,Kg,FALSE,"0,025","0,025","0,025","0,025"
+Pain choco/confiture + Chocolat chaud,Pain,Tranche,FALSE,0,0,0,0
+Pain choco/confiture + Chocolat chaud,Chocolat à tartiner,Kg,FALSE,"0,025","0,025","0,025","0,025"
+Pain choco/confiture + Chocolat chaud,Confiture,Kg,FALSE,"0,025","0,025","0,025","0,025"
+Pain choco/confiture + Chocolat chaud,Lait,L,FALSE,0,0,0,0
+Pain choco/confiture + Chocolat chaud,Chocolat noir,Kg,FALSE,"0,01","0,01","0,01","0,01"
+Pain choco + Jus,Pain,Tranche,FALSE,0,0,0,0
+Pain choco + Jus,Chocolat à tartiner,Kg,FALSE,"0,025","0,025","0,025","0,025"
+Pain choco + Jus,Confiture,Kg,FALSE,"0,025","0,025","0,025","0,025"
+Pain choco + Jus,Jus de pomme,L,FALSE,"0,2","0,2","0,25","0,25"
+Pain confiture,Pain,Tranche,FALSE,0,0,0,0
+Pain confiture,Confiture,Kg,FALSE,"0,025","0,025","0,025","0,025"
+Pain confiture + Chocolat chaud,Pain,Tranche,FALSE,0,0,0,0
+Pain confiture + Chocolat chaud,Confiture,Kg,FALSE,"0,025","0,025","0,025","0,025"
+Pain confiture + Chocolat chaud,Lait,L,FALSE,0,0,0,0
+Pain confiture + Chocolat chaud,Chocolat noir,Kg,FALSE,"0,01","0,01","0,01","0,01"
+Pain confiture + Jus,Pain,Tranche,FALSE,0,0,0,0
+Pain confiture + Jus,Confiture,Kg,FALSE,"0,025","0,025","0,025","0,025"
+Pain confiture + Jus,Jus de pomme,L,FALSE,"0,2","0,2","0,25","0,25"
+Pain perdu,Pain,Tranche,FALSE,0,0,0,0
+Pain perdu,Œufs,Pièce,FALSE,0,0,0,0
+Pain perdu,Lait,L,FALSE,0,0,0,0
+Pain perdu,Beurre,Condiment,FALSE,0,0,0,0
+Pain perdu,Sucre,Kg,FALSE,"0,025","0,025","0,025","0,025"
+Pain perdu,Cassonade,Kg,FALSE,"0,025","0,025","0,025","0,025"
+Porridge chocolat-banane,Lait,L,FALSE,0,0,0,0
+Porridge chocolat-banane,Flocons d'avoine,Kg,FALSE,"0,04","0,04","0,06","0,05"
+Porridge chocolat-banane,Sucre,Kg,FALSE,"0,005","0,005","0,005","0,005"
+Porridge chocolat-banane,Bananes,Pièce,FALSE,0,0,0,0
+Porridge chocolat-banane,Chocolat noir,Kg,FALSE,"0,01","0,01","0,01","0,01"
+Porridge nature,Lait,L,FALSE,0,0,0,0
+Porridge nature,Flocons d'avoine,Kg,FALSE,"0,04","0,04","0,06","0,05"
+Porridge nature,Sucre,Kg,FALSE,"0,005","0,005","0,005","0,005"
+Yaourt garni,Yaourt,Kg,FALSE,0,0,0,0
+Yaourt garni,Crunchy,Kg,FALSE,"0,04","0,04","0,06","0,05"
+Yaourt garni,Pêches,Pièce,FALSE,0,0,0,0
+Baguette (salade de viande/poulet curry/américain),Baguettes,Pièce,FALSE,0,0,0,0
+Baguette (salade de viande/poulet curry/américain),Salade de viande,Kg,FALSE,0,0,0,0
+Baguette (salade de viande/poulet curry/américain),Salade de poulet curry,Kg,FALSE,0,0,0,0
+Baguette (salade de viande/poulet curry/américain),Américain préparé,Kg,FALSE,0,0,0,0
+Baguette (salade de viande/poulet curry/américain),Salade,Pièce,FALSE,0,0,0,0
+Baguette (salade de viande/poulet curry/américain),Hummus,Kg,TRUE,0,0,0,0
+Baguette (salade de viande/poulet curry/américain),Fromage (tranche),Tranche,TRUE,0,0,0,0
+Baguette américain,Baguettes,Pièce,FALSE,0,0,0,0
+Baguette américain,Américain préparé,Kg,FALSE,0,0,0,0
+Baguette américain,Salade,Pièce,FALSE,0,0,0,0
+Baguette américain,Tomate,Pièce,FALSE,0,0,0,0
+Baguette américain,Hummus,Kg,TRUE,0,0,0,0
+Baguette américain,Fromage (tranche),Tranche,TRUE,0,0,0,0
+Baguette jambon/fromage,Baguettes,Pièce,FALSE,0,0,0,0
+Baguette jambon/fromage,Jambon,Tranche,FALSE,0,0,0,0
+Baguette jambon/fromage,Fromage (tranche),Tranche,FALSE,0,0,0,0
+Baguette jambon/fromage,Tomate,Pièce,FALSE,0,0,0,0
+Baguette jambon/fromage,Mayonnaise,Condiment,FALSE,0,0,0,0
+Baguette jambon/fromage,Ketchup,Condiment,FALSE,0,0,0,0
+Baguette jambon/fromage,Salade,Pièce,FALSE,0,0,0,0
+Baguette jambon/fromage,Hummus,Kg,TRUE,0,0,0,0
+Baguette légumes grillés (végé),Baguettes,Pièce,FALSE,0,0,0,0
+Baguette légumes grillés (végé),Poivrons,Kg,FALSE,0,0,0,0
+Baguette légumes grillés (végé),Feta,Kg,FALSE,0,0,0,0
+Baguette légumes grillés (végé),Courgette,Kg,FALSE,0,0,0,0
+Baguette légumes grillés (végé),Aubergines,Kg,FALSE,0,0,0,0
+Baguette légumes grillés (végé),Huile d'olive,Condiment,FALSE,0,0,0,0
+Baguette légumes grillés (végé),Hummus,Kg,FALSE,0,0,0,0
+Baguette tomate mozza (végé),Baguettes,Pièce,FALSE,0,0,0,0
+Baguette tomate mozza (végé),Tomate,Pièce,FALSE,0,0,0,0
+Baguette tomate mozza (végé),Mozzarella,Pièce,FALSE,0,0,0,0
+Baguette tomate mozza (végé),Huile d'olive,Condiment,FALSE,0,0,0,0
+Baguette tomate mozza (végé),Pesto,Kg,FALSE,"0,04","0,04","0,05","0,05"
+Pêche au thon,Pêches,Pièce,FALSE,0,0,0,0
+Pêche au thon,Thon,Kg,FALSE,0,0,0,0
+Pêche au thon,Riz,Kg,FALSE,"0,04","0,04","0,06","0,05"
+Salade de lentilles,Lentilles vertes,Kg,FALSE,"0,05","0,04","0,06","0,05"
+Salade de lentilles,Pommes,Kg,FALSE,0,0,0,0
+Salade de lentilles,Pomme de terre,Kg,FALSE,0,0,0,0
+Salade de lentilles,Lardons,Kg,FALSE,0,0,0,0
+Salade de lentilles,Huile d'olive,Condiment,FALSE,0,0,0,0
+Salade de lentilles,Vinaigre de vin blanc,Condiment,FALSE,0,0,0,0
+Salade de lentilles (végé),Lentilles vertes,Kg,FALSE,"0,05","0,04","0,06","0,05"
+Salade de lentilles (végé),Pommes,Kg,FALSE,0,0,0,0
+Salade de lentilles (végé),Pomme de terre,Kg,FALSE,0,0,0,0
+Salade de lentilles (végé),Huile d'olive,Condiment,FALSE,0,0,0,0
+Salade de lentilles (végé),Vinaigre de vin blanc,Condiment,FALSE,0,0,0,0
+Salade de pâtes,Spirelli,Kg,FALSE,"0,1","0,9","0,14","0,11"
+Salade de pâtes,Tomate,Kg,FALSE,0,0,0,0
+Salade de pâtes,Concombre,Kg,FALSE,0,0,0,0
+Salade de pâtes,Fromage (pâte dure),Kg,FALSE,0,0,0,0
+Salade de pâtes,Jambon (tranche épaisse),Kg,FALSE,0,0,0,0
+Salade de pâtes,Huile d'olive,Condiment,FALSE,0,0,0,0
+Salade de pâtes (végé),Spirelli,Kg,FALSE,"0,1","0,9","0,14","0,11"
+Salade de pâtes (végé),Tomate,Kg,FALSE,0,0,0,0
+Salade de pâtes (végé),Concombre,Kg,FALSE,0,0,0,0
+Salade de pâtes (végé),Fromage (pâte dure),Kg,FALSE,0,0,0,0
+Salade de pâtes (végé),Œufs,Pièce,FALSE,0,0,0,0
+Salade de pâtes (végé),Huile d'olive,Condiment,FALSE,0,0,0,0
+Salade de pâtes grec,Pâtes grec,Kg,FALSE,"0,1","0,9","0,14","0,11"
+Salade de pâtes grec,Tomate,Kg,FALSE,0,0,0,0
+Salade de pâtes grec,Concombre,Kg,FALSE,0,0,0,0
+Salade de pâtes grec,Olive,Kg,FALSE,0,0,0,0
+Salade de pâtes grec,Feta,Kg,FALSE,0,0,0,0
+Salade de pâtes grec,Huile d'olive,Condiment,FALSE,0,0,0,0
+Salade de pâtes légumes grilés (végé),Spirelli,Kg,FALSE,"0,1","0,9","0,14","0,11"
+Salade de pâtes légumes grilés (végé),Poivrons,Kg,FALSE,0,0,0,0
+Salade de pâtes légumes grilés (végé),Feta,Kg,FALSE,0,0,0,0
+Salade de pâtes légumes grilés (végé),Courgette,Kg,FALSE,0,0,0,0
+Salade de pâtes légumes grilés (végé),Aubergines,Kg,FALSE,0,0,0,0
+Salade de pâtes légumes grilés (végé),Huile d'olive,Condiment,FALSE,0,0,0,0
+Salade de quinoa (végé),Quinoa,Kg,FALSE,"0,06","0,05","0,08","0,07"
+Salade de quinoa (végé),Feta,Kg,FALSE,0,0,0,0
+Salade de quinoa (végé),Tomate,Kg,FALSE,0,0,0,0
+Salade de quinoa (végé),Concombre,Kg,FALSE,0,0,0,0
+Salade de quinoa (végé),Olive,Kg,FALSE,0,0,0,0
+Salade de quinoa (végé),Huile d'olive,Condiment,FALSE,0,0,0,0
+Salade de riz (végé),Riz,Kg,FALSE,"0,05","0,05","0,07","0,06"
+Salade de riz (végé),Tomate,Kg,FALSE,0,0,0,0
+Salade de riz (végé),Concombre,Kg,FALSE,0,0,0,0
+Salade de riz (végé),Poivrons,Kg,FALSE,0,0,0,0
+Salade de riz (végé),Maïs,Kg,FALSE,0,0,0,0
+Salade de riz (végé),Olive,Kg,FALSE,0,0,0,0
+Salade de riz (végé),Huile d'olive,Condiment,FALSE,0,0,0,0
+Salade liégeoise,Lardons,Kg,FALSE,0,0,0,0
+Salade liégeoise,Haricots vert,Kg,FALSE,0,0,0,0
+Salade liégeoise,Pomme de terre,Kg,FALSE,0,0,0,0
+Salade liégeoise,Vinaigre de vin blanc,Condiment,FALSE,0,0,0,0
+Salade liégeoise,Huile d'olive,Condiment,FALSE,0,0,0,0
+Salade liégeoise,Œufs,Pièce,TRUE,0,0,0,0
+Salade liégeoise (végé),Haricots vert,Kg,FALSE,0,0,0,0
+Salade liégeoise (végé),Pomme de terre,Kg,FALSE,0,0,0,0
+Salade liégeoise (végé),Vinaigre de vin blanc,Condiment,FALSE,0,0,0,0
+Salade liégeoise (végé),Huile d'olive,Condiment,FALSE,0,0,0,0
+Salade liégeoise (végé),Œufs,Pièce,FALSE,0,0,0,0
+Taboulé,Semoule,Kg,FALSE,"0,06","0,05","0,08","0,07"
+Taboulé,Jeunes oignons,Kg,FALSE,0,0,0,0
+Taboulé,Citron,Pièce,FALSE,0,0,0,0
+Taboulé,Tomate,Kg,FALSE,0,0,0,0
+Taboulé,Concombre,Kg,FALSE,0,0,0,0
+Taboulé,Jambon,Tranche,FALSE,0,0,0,0
+Taboulé,Huile d'olive,Condiment,FALSE,0,0,0,0
+Taboulé (végé),Semoule,Kg,FALSE,"0,06","0,05","0,08","0,07"
+Taboulé (végé),Jeunes oignons,Kg,FALSE,0,0,0,0
+Taboulé (végé),Citron,Pièce,FALSE,0,0,0,0
+Taboulé (végé),Tomate,Kg,FALSE,0,0,0,0
+Taboulé (végé),Concombre,Kg,FALSE,0,0,0,0
+Taboulé (végé),Huile d'olive,Condiment,FALSE,0,0,0,0
+Tartines fromage (végé),Pain,Tranche,FALSE,0,0,0,0
+Tartines fromage (végé),Fromage (tranche),Tranche,FALSE,0,0,0,0
+Tartines fromage (végé),Salade,Pièce,FALSE,0,0,0,0
+Tartines fromage (végé),Tomate,Pièce,FALSE,0,0,0,0
+Tartines fromage (végé),Mayonnaise,Condiment,FALSE,0,0,0,0
+Tartines fromage (végé),Ketchup,Condiment,FALSE,0,0,0,0
+Tartines jambon/fromage,Pain,Tranche,FALSE,0,0,0,0
+Tartines jambon/fromage,Jambon,Tranche,FALSE,0,0,0,0
+Tartines jambon/fromage,Fromage (tranche),Tranche,FALSE,0,0,0,0
+Tartines jambon/fromage,Salade,Pièce,FALSE,"0,08","0,08","0,1","0,1"
+Tartines jambon/fromage,Tomate,Pièce,FALSE,"0,4","0,4","0,5","0,5"
+Tartines jambon/fromage,Mayonnaise,Condiment,FALSE,0,0,0,0
+Tartines jambon/fromage,Ketchup,Condiment,FALSE,0,0,0,0
+Tartines jambon/fromage,Hummus,Kg,TRUE,0,0,0,0
+Bananes,Bananes,Pièce,FALSE,1,1,1,1
+Biscuits,Flocons d'avoine,Kg,FALSE,"0,015","0,015","0,015","0,015"
+Biscuits,Beurre,Kg,FALSE,"0,045","0,045","0,045","0,045"
+Biscuits,Sucre,Kg,FALSE,"0,02","0,02","0,02","0,02"
+Biscuits,Levure chimique,Condiment,FALSE,0,0,0,0
+Brownies,Sucre,Kg,FALSE,"0,005","0,005","0,005","0,005"
+Brownies,Chocolat noir,Kg,FALSE,"0,025","0,025","0,025","0,025"
+Brownies,Beurre,Kg,FALSE,"0,02","0,02","0,02","0,02"
+Brownies,Œufs,Pièce,FALSE,"0,5","0,5","0,5","0,5"
+Brownies,Farine,Kg,FALSE,"0,02","0,02","0,02","0,02"
+Brownies,Amandes,Kg,FALSE,"0,01","0,01","0,01","0,01"
+Cake chocolat,Chocolat noir,Kg,FALSE,"0,025","0,025","0,025","0,025"
+Cake chocolat,Beurre,Kg,FALSE,"0,025","0,025","0,025","0,025"
+Cake chocolat,Œufs,Pièce,FALSE,"0,5","0,5","0,5","0,5"
+Cake chocolat,Farine,Kg,FALSE,"0,001","0,001","0,001","0,001"
+Cake chocolat,Sucre,Kg,FALSE,"0,03","0,03","0,03","0,03"
+Cake nature,Sucre,Kg,FALSE,"0,015","0,015","0,015","0,015"
+Cake nature,Farine,Kg,FALSE,"0,015","0,015","0,015","0,015"
+Cake nature,Beurre,Kg,FALSE,"0,015","0,015","0,015","0,015"
+Cake nature,Œufs,Pièce,FALSE,"0,25","0,25","0,25","0,25"
+Cookies,Flocons d'avoine,Kg,FALSE,"0,015","0,015","0,015","0,015"
+Cookies,Beurre,Kg,FALSE,"0,045","0,045","0,045","0,045"
+Cookies,Sucre,Kg,FALSE,"0,02","0,02","0,02","0,02"
+Cookies,Levure chimique,Condiment,FALSE,0,0,0,0
+Cookies,Chocolat noir,Kg,FALSE,"0,02","0,02","0,02","0,02"
+Crumble pomme,Canelle,Condiment,FALSE,0,0,0,0
+Crumble pomme,Cassonade,Kg,FALSE,"0,025","0,025","0,025","0,025"
+Crumble pomme,Farine,Kg,FALSE,"0,025","0,025","0,025","0,025"
+Crumble pomme,Beurre,Kg,FALSE,"0,02","0,02","0,02","0,02"
+Crumble pomme,Pommes,Pièce,FALSE,1,1,1,1
+Glaces,Glace,L,FALSE,0,0,0,0
+Melons,Melons,Pièce,FALSE,"0,125","0,125","0,14","0,14"
+Nectarines,Nectarines,Pièce,FALSE,1,1,1,1
+Pastèques,Pastèques,Pièce,FALSE,"0,1","0,1","0,14","0,14"
+Pèches,Pêches,Pièce,FALSE,1,1,1,1
+Poires,Poires,Pièce,FALSE,1,1,1,1
+Pommes,Pommes,Pièce,FALSE,1,1,1,1
+Salade de fruits,Pommes,Pièce,FALSE,0,0,"0,3","0,4"
+Salade de fruits,Poires,Pièce,FALSE,0,0,"0,3","0,4"
+Salade de fruits,Pêches,Pièce,FALSE,0,0,"0,3","0,4"
+Salade de fruits,Bananes,Pièce,FALSE,0,0,"0,3","0,4"
+Salade de fruits,Pastèques,Pièce,FALSE,0,0,"0,1","0,1"
+Salade de fruits,Melons,Pièce,FALSE,0,0,"0,1","0,1"
+Tiramisu,Spéculoos,Kg,FALSE,"0,05","0,05","0,05","0,05"
+Tiramisu,Mascarpone,Kg,FALSE,"0,05","0,05","0,05","0,05"
+Tiramisu,Œufs,Pièce,FALSE,1,1,1,1
+Tiramisu,Sucre,Kg,FALSE,"0,015","0,015","0,015","0,015"
+Tiramisu,Sucre vanillé,Condiment,FALSE,0,0,0,0
+Tiramisu,Café,Condiment,FALSE,0,0,0,0
+Tiramisu,Cacao,Condiment,FALSE,0,0,0,0
+Pain choco/confiture + Jus,Pain,Tranche,FALSE,0,0,0,0
+Pain choco/confiture + Jus,Confiture,Kg,FALSE,"0,025","0,025","0,025","0,025"
+Pain choco/confiture + Jus,Jus de pomme,L,FALSE,"0,2","0,2","0,25","0,25"

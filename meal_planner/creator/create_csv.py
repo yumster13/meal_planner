@@ -6,6 +6,12 @@ import os
 import zipfile
 from io import BytesIO
 from database.models import *
+class Ages(models.TextChoices):
+    DEFAULT = '18+',
+    PF = 'Petit F', 
+    PG = 'Petit G', 
+    GF = 'Grand F', 
+    GG = 'Grand G',
 
 def calculate_quantities(request):
     camps = databse_access.getCamps()
@@ -22,22 +28,38 @@ def calculate_quantities(request):
         age = camp.section.age
         menus = databse_access.getMenuCamp(camp)
         for menu in menus:
-            print('recipe', menu.recipe.id)
+            #print('recipe', menu.recipe.id)
             recipe = databse_access.getEngredientsFromRecipe(menu.recipe.id)
-            print(recipe)
+            #print(recipe)
             for recipexengredient in recipe:
-                engredients = Recipe.objects.values('ingredients__ingredient__id','ingredients__ingredient__vege','ingredients__ingredient__name','ingredients__ingredient__category__name').filter(id=menu.recipe.id).distinct()
+                engredients = Recipe.objects.values('ingredients__ingredient__id','ingredients__ingredient__name','ingredients__ingredient__category__name').filter(id=menu.recipe.id).distinct()
+                recipe_id = menu.recipe.id
+
+                # Filter RecipeXEngredient related to the specific recipe and age
+                """filtered_ingredient_ids = RecipeXEngredient.objects.filter(
+                    recipe__id=recipe_id,
+                    age=Ages.GG
+                ).values_list('ingredient_id', flat=True).distinct()
+                print(filtered_ingredient_ids)"""
+                #print(engredients)
                 for engredient in engredients:
                     quantity_anim = 0
                     quantity_lead = 0
                     quantity_vege = 0
-                    quantity_anim = RecipeXEngredient.objects.values('quantity').filter(ingredient__id = engredient['ingredients__ingredient__id'],age = age).all()
-                    quantity_anim = quantity_anim[0]['quantity'] * menu.nbr_anim
-                    quantity_leaders = RecipeXEngredient.objects.values('quantity').filter(ingredient__id = engredient['ingredients__ingredient__id'],age = 'Grand G').all()
-                    quantity_lead = quantity_leaders[0]['quantity'] * menu.nbr_leaders
-                    print(engredient['ingredients__ingredient__vege'] == True, "  ",engredient['ingredients__ingredient__vege'])
-                    if (engredient['ingredients__ingredient__vege']) == True:
+                    ingVege = RecipeXEngredient.objects.filter(recipe__id=recipe_id,age=Ages.GG,ingredient__id = engredient['ingredients__ingredient__id']).values('vege').distinct()
+                    
+                    print(ingVege)
+                    if ingVege[0]['vege'] == True:
+                        print(engredient['ingredients__ingredient__name'])
+                        quantity_leaders = RecipeXEngredient.objects.filter(recipe__id=recipe_id,age=Ages.GG,ingredient__id = engredient['ingredients__ingredient__id']).values('quantity').distinct()
+                        print(quantity_leaders[0]['quantity'], menu.nbr_vege)
                         quantity_vege = quantity_leaders[0]['quantity'] * menu.nbr_vege
+                    else:
+                        quantity_anim = RecipeXEngredient.objects.filter(recipe__id=recipe_id,age=age,ingredient__id = engredient['ingredients__ingredient__id']).values('quantity').distinct()
+                        quantity_leaders = RecipeXEngredient.objects.filter(recipe__id=recipe_id,age=Ages.GG,ingredient__id = engredient['ingredients__ingredient__id']).values('quantity').distinct()
+                        quantity_anim = quantity_anim[0]['quantity'] * menu.nbr_anim
+                        quantity_lead = quantity_leaders[0]['quantity'] * menu.nbr_leaders
+                    print(quantity_anim,quantity_lead,quantity_vege)
                     categories = str(engredient['ingredients__ingredient__category__name'])
                     engredient_dict.append([menu.date, recipe[0].name, str(engredient['ingredients__ingredient__name']), (quantity_lead + quantity_anim + quantity_vege), categories])
                     """print("id: ->",engredient.ingredient.id)
@@ -63,8 +85,8 @@ def calculate_quantities(request):
                         print(recipe)
                         categories = str(engredient_info.category.name)
                     engredient_dict.append([menu.date, recipe[0].name, engredient_info.name, (quantity_lead + quantity_anim + quantity_vege), categories])"""
-        print('menu\n', menus)
-        print(engredient_dict)
+        #print('menu\n', menus)
+        #print(engredient_dict)
 
         # Write to Excel file
         df = pd.DataFrame(engredient_dict, columns=['Date', 'Recipe Name', 'Ingredient Name', 'Total Quantity', 'Categories'])
@@ -116,18 +138,26 @@ def generate_ingredient_list(request):
             recipe = databse_access.getEngredientsFromRecipe(menu.recipe.id)
             
             for recipexengredient in recipe:
-                engredients = Recipe.objects.values('ingredients__ingredient__id','ingredients__ingredient__vege','ingredients__ingredient__name','ingredients__ingredient__category__name','ingredients__ingredient__mesurement').filter(id=menu.recipe.id).distinct()
+                engredients = Recipe.objects.values('ingredients__ingredient__id','ingredients__ingredient__name','ingredients__ingredient__category__name','ingredients__ingredient__mesurement').filter(id=menu.recipe.id).distinct()
                 for engredient in engredients:
+                    recipe_id = menu.recipe.id
                     quantity_anim = 0
                     quantity_lead = 0
                     quantity_vege = 0
-                    quantity_anim = RecipeXEngredient.objects.values('quantity').filter(ingredient__id = engredient['ingredients__ingredient__id'],age = age).all()
-                    quantity_anim = quantity_anim[0]['quantity'] * menu.nbr_anim
-                    quantity_leaders = RecipeXEngredient.objects.values('quantity').filter(ingredient__id = engredient['ingredients__ingredient__id'],age = 'Grand G').all()
-                    quantity_lead = quantity_leaders[0]['quantity'] * menu.nbr_leaders
-                    print(engredient['ingredients__ingredient__vege'] == True, "  ",engredient['ingredients__ingredient__vege'])
-                    if (engredient['ingredients__ingredient__vege']) == True:
+                    ingVege = RecipeXEngredient.objects.filter(recipe__id=recipe_id,age=Ages.GG,ingredient__id = engredient['ingredients__ingredient__id']).values('vege').distinct()
+                    
+                    print(ingVege)
+                    if ingVege[0]['vege'] == True:
+                        print(engredient['ingredients__ingredient__name'])
+                        quantity_leaders = RecipeXEngredient.objects.filter(recipe__id=recipe_id,age=Ages.GG,ingredient__id = engredient['ingredients__ingredient__id']).values('quantity').distinct()
+                        print(quantity_leaders[0]['quantity'], menu.nbr_vege)
                         quantity_vege = quantity_leaders[0]['quantity'] * menu.nbr_vege
+                    else:
+                        quantity_anim = RecipeXEngredient.objects.filter(recipe__id=recipe_id,age=age,ingredient__id = engredient['ingredients__ingredient__id']).values('quantity').distinct()
+                        quantity_leaders = RecipeXEngredient.objects.filter(recipe__id=recipe_id,age=Ages.GG,ingredient__id = engredient['ingredients__ingredient__id']).values('quantity').distinct()
+                        quantity_anim = quantity_anim[0]['quantity'] * menu.nbr_anim
+                        quantity_lead = quantity_leaders[0]['quantity'] * menu.nbr_leaders
+                    print(quantity_anim,quantity_lead,quantity_vege)
                     categories = str(engredient['ingredients__ingredient__category__name'])
 
                     total_quantity = quantity_lead + quantity_anim + quantity_vege
